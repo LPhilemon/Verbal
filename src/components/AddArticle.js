@@ -1,72 +1,180 @@
 
 import { useState } from "react";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "../../firebase/clientApp";
+import { addDoc, collection, query, where, getDocs, limit } from "firebase/firestore";
+import { db, storage } from "../../firebase/clientApp";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
-const AddArticle = () => {
+const ArticleForm = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
-  const [publishedAt, setPublishedAt] = useState("");
-  const [excerpt, setExcerpt] = useState("");
   const [content, setContent] = useState("");
-  const [imageURL, setImageURL] = useState("");
+  const [image, setImage] = useState(null);
+  const [imageURLInput, setImageURLInput] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
+
+  const generateExcerpt = (content) => {
+    const lines = content.split("\n").slice(0, 3);
+    return lines.join("\n");
+  };
+
+
+  const generateSlug = (title) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w ]+/g, '')
+      .replace(/ +/g, '-')
+      .trim();
+  };
+
+  const slugExists = async (slug) => {
+    const articlesRef = collection(db, "articles");
+    const q = query(articlesRef, where("slug", "==", slug), limit(1));
+    const querySnapshot = await getDocs(q);
+    return !querySnapshot.empty;
+  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
+      let imageURL = imageURLInput;
+
+      if (image) {
+        const storageRef = ref(storage, `article-images/${image.name}`);
+        const uploadTaskSnapshot = await uploadBytes(storageRef, image);
+        imageURL = await getDownloadURL(uploadTaskSnapshot.ref);
+        console.log("Image uploaded successfully:", imageURL);
+      }
+
+      let slug = generateSlug(title);
+      let isUniqueSlug = false;
+
+      while (!isUniqueSlug) {
+        const exists = await slugExists(slug);
+
+        if (exists) {
+          const randomNumber = Math.floor(Math.random() * 9000) + 1000;
+          slug = `${slug}-${randomNumber}`;
+        } else {
+          isUniqueSlug = true;
+        }
+      }
+
       await addDoc(collection(db, "articles"), {
         title,
         author,
-        publishedAt,
-        excerpt,
         content,
         imageURL,
+        excerpt: generateExcerpt(content),
+        publishedAt: new Date().toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        }),
+        slug: slug, // Add the unique slug
       });
+
       alert("Article added successfully!");
+
       setTitle("");
       setAuthor("");
-      setPublishedAt("");
-      setExcerpt("");
       setContent("");
-      setImageURL("");
-    } catch (error) {
-      alert("Failed to add article: " + error.message);
+      setImage(null);
+      setImageURLInput("");
+    } catch (err) {
+      console.error("Error adding document: ", err);
+      alert("Error adding document: " + err.message);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
+
   return (
-    <div>
-      <h2>Add Article</h2>
-      <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Title:
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Author:
+        <input
+          type="text"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Content:
+        <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Image Source:
+
         <label>
-          Title:
-          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
+          <input
+            type="radio"
+            name="imageSource"
+            onChange={() => {
+              setImage(null);
+              setImageURLInput("");
+            }}
+            checked={!image}
+          />
+          URL
         </label>
         <label>
-          Author:
-          <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} required />
+          <input
+            type="radio"
+            name="imageSource"
+            onChange={(e) => {
+              if (e.target.checked) {
+                setImage({});
+                setImageURLInput("");
+              }
+            }}
+            checked={!!image}
+          />
+          Upload
         </label>
+
+      </label>
+      <br />
+      {image ? (
         <label>
-          Published At:
-          <input type="date" value={publishedAt} onChange={(e) => setPublishedAt(e.target.value)} required />
+          Image:
+          <input type="file" onChange={handleImageChange} />
         </label>
-        <label>
-          Excerpt:
-          <textarea value={excerpt} onChange={(e) => setExcerpt(e.target.value)} required />
-        </label>
-        <label>
-          Content:
-          <textarea value={content} onChange={(e) => setContent(e.target.value)} required />
-        </label>
+      ) : (
         <label>
           Image URL:
-          <input type="text" value={imageURL} onChange={(e) => setImageURL(e.target.value)} required />
+          <input
+            type="text"
+            value={imageURLInput}
+            onChange={(e) => setImageURLInput(e.target.value)}
+          />
         </label>
-        <button type="submit">Add Article</button>
-      </form>
-    </div>
+      )}
+      <br />
+      <button type="submit" disabled={isSubmitting}>
+        Submit
+      </button>
+    </form>
   );
 };
 
-export default AddArticle;
+export default ArticleForm;
+

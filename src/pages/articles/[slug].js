@@ -1,8 +1,9 @@
 
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { db } from '../firebase/clientApp';
-import ArticlePageContent from '../components/ArticlePage/ArticlePageContent';
+import { db } from '../../../firebase/clientApp';
+import ArticlePageContent from '../../components/ArticlePage/ArticlePageContent';
+import { collection, query, orderBy, limitToLast, getDocs, where, limit } from "firebase/firestore";
 
 const ArticlePage = () => {
   const router = useRouter();
@@ -16,9 +17,9 @@ const ArticlePage = () => {
     if (!slug) return;
 
     setLoading(true);
-    db.collection('articles')
-      .where('slug', '==', slug)
-      .get()
+    const articlesRef = collection(db, 'articles');
+    const q = query(articlesRef, where('slug', '==', slug), limit(1));
+    getDocs(q)
       .then((querySnapshot) => {
         if (!querySnapshot.empty) {
           const doc = querySnapshot.docs[0];

@@ -1,0 +1,67 @@
+/* Add the styles from https://assets.poetryfoundation.org/assets/styles/main-8ddcc98e12.css */
+
+/* Custom styles for the AppBarComponent */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    position: relative;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+  }
+  
+  .navList.open {
+    transform: scaleY(1);
+  }
+  
+  .navItem {
+    display: block;
+  }
+  
+  .navLink {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .navLink:hover {
+    background-color: #eee;
+  }
+  

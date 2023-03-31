@@ -1,12 +1,15 @@
 
-import { db } from "../../firebase/clientApp";
-
-import ArticleList from "../../components/articles/ArticleList";
+import { collection, query, orderBy, getDocs } from "firebase/firestore";
+import { db } from "../../../firebase/clientApp";
+import ArticleList from "../../components/Articles/ArticleList";
+import styles from "../../styles/ArticleListItem.module.css";
 
 export async function getServerSideProps() {
-  const snapshot = await db.collection("articles").get();
+  const articlesRef = collection(db, "articles");
+  const q = query(articlesRef, orderBy("publishedAt", "desc"));
+  const querySnapshot = await getDocs(q);
 
-  const articles = snapshot.docs.map((doc) => ({
+  const articles = querySnapshot.docs.map((doc) => ({
     id: doc.id,
     ...doc.data(),
   }));
@@ -18,15 +21,16 @@ export async function getServerSideProps() {
   };
 }
 
-
-const HomePageContent = ({ articles }) => {
+const ArticlesPageContent = ({ articles }) => {
   return (
     <div>
-      <h1>Welcome to my website</h1>
+       <div className={styles.cFeaturePreamble}>
+          <span className={`${styles.cTxt} ${styles.cTxtCatMeta}`}>Article</span>
+        </div>
       <ArticleList articles={articles} />
     </div>
   );
 };
 
-export default HomePageContent;
+export default ArticlesPageContent;
 

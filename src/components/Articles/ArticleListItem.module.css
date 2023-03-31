@@ -1,4 +1,5 @@
-* styles/ArticleListItem.module.css */
+
+/* styles/ArticleListItem.module.css */
 .article {
   display: flex;
   flex-direction: column;
@@ -34,11 +35,3 @@
   color: #333;
 }
 
-.c-feature {
-  line-height: 1.231;
-}
-
-.c-feature-media {
-  margin-bottom: 24px;
-  position: relative;
-}

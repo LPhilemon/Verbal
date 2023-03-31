@@ -1,0 +1,41 @@
+.app-bar {
+    background-color: white;
+    color: black;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .drawer {
+    width: 250px;
+  }
+  
+  .drawer-list {
+    width: 100%;
+  }
+  
