@@ -51,13 +51,13 @@ const ArticlePageContent = () => {
       <div className={styles["c-feature"]}>
         <div className={styles["c-feature-media"]}>
           
-            {imageURL && (
-              <img
-                src={imageURL}
-                alt={title}
-                sizes="(max-width: 667px) calc(100vw - (15px * 2)), (max-width: 1170px) calc(100vw - (15px * 2) - (44.957264957vw) - (2.478632478vw * 2)), 570px"
-              />
-            )}
+        {imageURL && (
+  <img
+    className="responsive-image"
+    src={imageURL}
+    alt={title}
+  />
+)}
          
         </div>
 
@@ -81,7 +81,7 @@ const ArticlePageContent = () => {
           </span>
         </div>
 
-        <div className={styles["c-feature-bd"]}>
+        <div className="cormorant-garamond">
           <p>{content}</p>
         </div>
       </div>

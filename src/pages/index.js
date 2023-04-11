@@ -4,6 +4,7 @@ import { db } from "../../firebase/clientApp";
 import Home from "../components/Home";
 import AddArticle from "../components/AddArticle";
 import Link from "next/link";
+import { Container,Box,Typography } from "@material-ui/core";
 import styles from "../styles/ArticleListItem.module.css";
 const HomeIndexPage = () => {
 	const [loading, setLoading] = useState(false);
@@ -41,12 +42,19 @@ const HomeIndexPage = () => {
 
 	return (
 		<div>
-		
-			<Home articles={articleData} />
+		<Box>
+			<Container maxWidth = "md">
+					<Box sx={{mx: 2}}>
+					<Home articles={articleData} />
 			<Link href="/articles">
 				View articles
 			</Link>
 			<AddArticle />
+
+					</Box>
+			</Container>
+		</Box>
+			
 
 		</div>
 	);

@@ -7,13 +7,14 @@ const ArticleList = ({ articles }) => {
   }
 
   return (
-    <ul>
-      {articles.map((article) => (
-        <li key={article.id}>
-          <ArticleListItem article={article} />
-        </li>
-      ))}
-    </ul>
+    <ul style={{ listStyleType: 'none' }}>
+  {articles.map((article) => (
+    <li key={article.id}>
+      <ArticleListItem article={article} />
+    </li>
+  ))}
+</ul>
+
   );
 };
 
