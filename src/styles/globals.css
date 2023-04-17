@@ -10,7 +10,22 @@
   font-style: normal;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url('/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+
 
 .responsive-image {
   width: 20%;
@@ -19,8 +34,8 @@
 
 /* styles/global.css */
 .cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
+  font-family: "EB Garamond", serif;
+  font-variation-settings: 'wght' 400, 'ital' 0;
 }
 
 .cFeature {
@@ -586,16 +601,16 @@
 }
 .mejs__time {
   padding-top: 15px;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.04em;
 }
 .mejs__time-current {
-  background: #e81c23;
+  background: #ffc107;
 }
 .mejs__horizontal-volume-current {
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 
 .o-actionGroup {
@@ -762,6 +777,7 @@
 .o-blocks > * {
   box-sizing: border-box;
   width: 100%;
+  list-style-type: none;
   padding: 20px 0 0 20px;
 }
 .o-blocks_compressed > * {
@@ -1180,6 +1196,7 @@ legend + .o-form-item {
 }
 .o-hList {
   display: flex;
+  list-style-type: none;
 }
 .o-hList_center {
   align-items: center;
@@ -1302,7 +1319,7 @@ legend + .o-form-item {
   vertical-align: baseline;
 }
 .isActive .icon_hype {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .icon_tagCompanion {
   height: 18px;
@@ -1333,7 +1350,7 @@ legend + .o-form-item {
   transition: fill 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 a:hover > .icon_navAction {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .icon_uniqueBranding {
   height: 34px;
@@ -1441,11 +1458,11 @@ a:hover > .icon_navAction {
   margin-right: 10px;
 }
 .mix-icon_brand {
-  border-color: #e81c23;
-  fill: #e81c23;
+  border-color: #ffc107;
+  fill: #ffc107;
 }
 .icon_openBook.mix-icon_brand {
-  stroke: #e81c23;
+  stroke: #ffc107;
 }
 .o-mix-icon_inverted {
   fill: #fff;
@@ -1462,7 +1479,7 @@ a:hover > .icon_navAction {
   fill: #767676;
 }
 .isActive .mix-icon_socialBlock {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .mix-icon_minorOffset {
   margin-left: 4px;
@@ -1556,7 +1573,7 @@ a:hover > .icon_navAction {
 }
 .o-footer,
 .o-footer-primary {
-  border-top: 1px solid #e81c23;
+  border-top: 1px solid #252523;
 }
 .o-footer-primary {
   padding-top: 18px;
@@ -1572,8 +1589,8 @@ a:hover > .icon_navAction {
   order: 2;
 }
 .o-footer-split-primary svg {
-  height: auto;
-  width: 136px;
+  height: 24px;
+  width: 24px;
 }
 .o-footer-icons {
   margin-bottom: 21px;
@@ -1611,7 +1628,7 @@ a:hover > .icon_navAction {
     order: 2;
   }
   .o-footer-split-secondary {
-    align-self: flex-end;
+    align-self: flex-start;
     padding-bottom: 30px;
   }
   .o-footer-icons {
@@ -1634,8 +1651,8 @@ a:hover > .icon_navAction {
     order: 0;
   }
   .o-footer-split-primary svg {
-    height: 277px;
-    width: 210px;
+    height: 24px;
+    width: 24px;
   }
   .o-footer-split-secondary {
     padding-bottom: 0;
@@ -2708,9 +2725,9 @@ a:hover > .icon_navAction {
 .c-alertBox {
   margin-bottom: 12px;
   padding: 9px 15px;
-  background-color: #e81c23;
+  background-color: #ffc107;
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
 }
 .c-alertBox_dynamic {
@@ -2752,7 +2769,7 @@ a:hover > .icon_navAction {
   padding: 12px;
   position: absolute;
   z-index: 1;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
   text-indent: 0;
   background-color: #fff;
@@ -2795,12 +2812,12 @@ a:hover > .icon_navAction {
   font-size: 1.125rem;
   line-height: 1.231;
   font-weight: 600;
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-aspectCta > *,
 .c-assetAction {
   box-sizing: border-box;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-assetAction {
   background-color: transparent;
@@ -2854,7 +2871,7 @@ a:hover > .icon_navAction {
   background-repeat: no-repeat;
   background-size: 8px auto;
   border-radius: 50%;
-  border: 3px solid #e81c23;
+  border: 3px solid #ffc107;
 }
 .c-assetAction_triggered_inverted .c-assetAction-trigger {
   left: 0;
@@ -2996,7 +3013,7 @@ a:hover > .icon_navAction {
   margin-right: -15px;
   padding: 0 12px;
   box-sizing: border-box;
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-banner-mark {
   height: 22px;
@@ -3027,7 +3044,7 @@ a:hover > .icon_navAction {
   position: relative;
 }
 .c-mix-billboard_brand {
-  background: #e81c23;
+  background: #ffc107;
 }
 .c-mix-billboard_neutral {
   background: #d3d3d3;
@@ -3048,7 +3065,7 @@ a:hover > .icon_navAction {
   flex-wrap: wrap;
   align-items: center;
   padding: 20px 15px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "EB Garamond", serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.231;
@@ -3077,7 +3094,7 @@ a:hover > .icon_navAction {
 }
 .c-billboard_minimal-h1 {
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 44px;
   font-weight: 600;
   line-height: 1.231;
@@ -3086,7 +3103,7 @@ a:hover > .icon_navAction {
 }
 .c-mix-billboard-bd_brand,
 .c-mix-billboard-hd_brand {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-mix-billboard-bd_lightest,
 .c-mix-billboard-hd_lightest {
@@ -3103,7 +3120,7 @@ a:hover > .icon_navAction {
 .c-mix-billboard_hatch_brand:after,
 .c-mix-billboard_hatch_brand:before,
 .c-mix-billboard_hatch_brand > .c-billboard-hd {
-  border-color: #e81c23;
+  border-color: #ffc107;
 }
 .c-mix-billboard_hatch_lightest:after,
 .c-mix-billboard_hatch_lightest:before,
@@ -3229,15 +3246,15 @@ a:hover > .icon_navAction {
 .c-btn {
   box-sizing: border-box;
   display: block;
-  border: 1px solid #e81c23;
+  border: 1px solid #ffc107;
   border-radius: 3px;
   position: relative;
   margin: 0;
   padding: 10px 24px;
   vertical-align: middle;
-  color: #e81c23;
+  color: #ffc107;
   cursor: pointer;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -3264,7 +3281,7 @@ a:hover > .icon_navAction {
 .c-btn:hover,
 .c-btn_inverted {
   color: #fff;
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-btn_inverted_contrast {
   border-color: #fff;
@@ -3274,8 +3291,8 @@ a:hover > .icon_navAction {
 }
 .c-btn_inverted:focus,
 .c-btn_inverted:hover {
-  border-color: #a31418;
-  background-color: #a31418;
+  border-color: #ffa107;
+  background-color: #ffa107;
 }
 .c-btn_inverted:focus {
   outline: 2px dotted #1e1e1e;
@@ -3352,7 +3369,7 @@ a:hover > .icon_navAction {
 }
 .c-btn_tag.isActive {
   color: #fff;
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-btn_tag.isActive:hover {
   color: #fff;
@@ -3369,13 +3386,13 @@ a:hover > .icon_navAction {
 .c-btn_transparent:active,
 .c-btn_transparent:focus {
   background-color: transparent;
-  outline: thin dotted #e81c23;
+  outline: thin dotted #ffc107;
 }
 .c-btn_pullTab > .icon {
   transition: scale 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .c-btn_transparent.isIlluminated > .icon {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .c-btn_inverted[data-view-role="trigger"] > .icon {
   transition: fill 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -3394,7 +3411,7 @@ a:hover > .icon_navAction {
   border: none;
   border-radius: 0;
   color: #000;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1;
@@ -3405,7 +3422,7 @@ a:hover > .icon_navAction {
   color: #000;
 }
 .c-btn_cylon:focus {
-  outline: thin dotted #e81c23;
+  outline: thin dotted #ffc107;
 }
 .c-btn_cylon_shrinkwrapped {
   font-size: inherit;
@@ -3420,7 +3437,7 @@ a:hover > .icon_navAction {
 }
 .c-btn_cylon_utility:focus,
 .c-btn_cylon_utility:hover {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-btn_cylon_flow,
 .c-btn_cylon_minimalCta {
@@ -3453,7 +3470,7 @@ a:hover > .icon_navAction {
   border: none;
   border-radius: 0 0 26px 0;
   padding: 7px 13px 7px 10px;
-  background-color: #e81c23;
+  background-color: #ffc107;
   color: #fff;
   font-size: 1.125rem;
   font-weight: 400;
@@ -3477,7 +3494,7 @@ a:hover > .icon_navAction {
 .o-expansionInput.isActive
   .c-btn_inverted[data-view-role="trigger"]
   > .icon.isIlluminated {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .mix-btn_searchMatch {
   border-bottom-left-radius: 0;
@@ -3607,7 +3624,7 @@ button.c-mix-btn_blocked {
 .c-calendar th {
   display: flex;
   color: #767676;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
   letter-spacing: 0.08em;
   text-align: center;
@@ -3646,7 +3663,7 @@ button.c-mix-btn_blocked {
   margin-bottom: 30px;
   padding: 7px 27px;
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.125rem;
   background-color: #000;
 }
@@ -3761,7 +3778,7 @@ button.c-mix-btn_blocked {
   display: block;
   margin: 0 auto 20px;
   width: 40px;
-  border-bottom: 1px solid #e81c23;
+  border-bottom: 1px solid #ffc107;
 }
 .c-cover-media {
   margin-bottom: 10px;
@@ -3788,7 +3805,7 @@ button.c-mix-btn_blocked {
   outline: 2px dotted #1e1e1e;
 }
 a:focus .c-cover-art {
-  outline: thin dotted #e81c23;
+  outline: thin dotted #ffc107;
 }
 .c-cover-media_proximate {
   margin-bottom: 5px;
@@ -3917,11 +3934,11 @@ a:focus .c-cover-art {
 }
 .c-day.isCurrent,
 .today .c-day {
-  border: 1px solid #e81c23;
+  border: 1px solid #ffc107;
   background-color: #fdeff0;
 }
 .c-day-index {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
   text-align: right;
@@ -3932,7 +3949,7 @@ a:focus .c-cover-art {
   display: none;
 }
 .isCurrent .c-day-index {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-day-list > * + * {
   margin-top: 7px;
@@ -3944,7 +3961,7 @@ a:focus .c-cover-art {
   border: 2px solid #d3d3d3;
 }
 .c-event {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-event-time {
   color: #494949;
@@ -4113,7 +4130,7 @@ a:focus .c-cover-art {
   position: absolute;
   background-color: #fff;
   color: #000;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.1875rem;
   font-weight: 600;
 }
@@ -4121,7 +4138,7 @@ a:focus .c-cover-art {
   text-decoration: none;
 }
 .c-feature-preamble_decorative {
-  border-bottom: 4px solid #e81c23;
+  border-bottom: 4px solid #ffc107;
   margin-bottom: 6px;
   padding-bottom: 3px;
 }
@@ -4153,7 +4170,7 @@ a:focus .c-cover-art {
   bottom: 0;
   position: absolute;
   left: calc(50% - 21px);
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-feature-suffix {
   margin-top: 30px;
@@ -4168,7 +4185,7 @@ a:focus .c-cover-art {
 .c-feature-bd {
   margin-bottom: 20px;
   color: #000 !important;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1.1875rem;
   line-height: 1.3;
@@ -4179,7 +4196,7 @@ a:focus .c-cover-art {
 .c-hdgSans:visited {
   color: #000;
   display: inline-block;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-weight: 700;
   line-height: 1.231;
 }
@@ -4198,7 +4215,7 @@ a:focus .c-cover-art {
   margin-bottom: 7px;
 }
 .c-feature-bd_sans {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
 }
 .c-feature_constrained .c-feature-bd {
@@ -4346,15 +4363,15 @@ a:focus .c-cover-art {
   background: #f1f1f1;
   font-size: 0.9375rem;
   color: #000;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 .c-field.isInvalid {
-  color: #e81c23;
+  color: #ffc107;
   background-color: #fdeff0;
-  border-color: #e81c23;
+  border-color: #ffc107;
 }
 .c-field_select {
   height: 42px;
@@ -4367,7 +4384,7 @@ a:focus .c-cover-art {
 }
 .c-field_select:focus {
   background-color: #fff;
-  border-color: #e81c23;
+  border-color: #ffc107;
   outline: none;
 }
 .c-field_text {
@@ -4382,7 +4399,7 @@ a:focus .c-cover-art {
 }
 .c-field_text:focus {
   background-color: #fff;
-  border-color: #e81c23;
+  border-color: #ffc107;
   outline: none;
 }
 .c-field_checkbox,
@@ -4435,12 +4452,12 @@ a:focus .c-cover-art {
   width: 8px;
   left: 4px;
   top: 4px;
-  background-color: #e81c23;
+  background-color: #ffc107;
 }
 .c-field_checkbox:focus ~ label:before,
 .c-field_radio:focus ~ label:before {
   background-color: #fff;
-  border-color: #e81c23;
+  border-color: #ffc107;
 }
 .c-field_textarea {
   width: 100%;
@@ -4450,7 +4467,7 @@ a:focus .c-cover-art {
 }
 .c-field_textarea:focus {
   background-color: #fff;
-  border-color: #e81c23;
+  border-color: #ffc107;
   outline: none;
 }
 .c-field[type="search"] {
@@ -4705,7 +4722,7 @@ input.c-field:placeholder-shown {
   border-radius: 18px;
   padding: 7px 15px;
   background-color: #e5e5e5;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -4778,9 +4795,9 @@ input.c-field:placeholder-shown {
   position: relative;
   margin: 0 auto;
   max-width: 250px;
-  background-color: #e81c23;
+  background-color: #ffc107;
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.1;
@@ -4936,7 +4953,7 @@ input.c-field:placeholder-shown {
   height: 100%;
 }
 .c-heroQuote-quote {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 3.125rem;
   font-style: italic;
   font-weight: 300;
@@ -4957,12 +4974,12 @@ p.c-heroQuote-quote {
   height: 100%;
 }
 .c-heroQuote-content_illuminated {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-heroQuote-meta {
   margin-bottom: 5px;
   color: #000;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1.1875rem;
   font-style: italic;
@@ -4995,7 +5012,7 @@ p.c-heroQuote-quote {
 .c-hdgSans {
   color: #000 !important;
   display: inline-block;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-weight: 700;
   line-height: 1.231;
 }
@@ -5121,7 +5138,7 @@ a.mix-c-hdg_inverted:hover {
 .c-hdgSerif {
   color: #000;
   display: inline-block;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-weight: 700;
   line-height: 1.3;
@@ -5206,7 +5223,7 @@ a.c-hdgSerif {
   margin-bottom: 8px;
 }
 .c-index-label_emphatic {
-  border-color: #e81c23;
+  border-color: #ffc107;
 }
 .c-index-list {
   margin-bottom: 20px;
@@ -5298,7 +5315,7 @@ a.c-hdgSerif {
   margin-bottom: 16px;
 }
 .c-issueBillboard-hd-hdg-meta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
 }
 .c-issueBillboard-hd-content {
@@ -5308,8 +5325,8 @@ a.c-hdgSerif {
   order: 1;
   margin-left: 15px;
   padding: 15px 15px 15px 0;
-  border-color: #e81c23;
-  border-top: solid #e81c23;
+  border-color: #ffc107;
+  border-top: solid #ffc107;
   border-width: 10px;
 }
 .c-issueBillboard-bd-content {
@@ -5366,8 +5383,8 @@ a.c-hdgSerif {
     flex-shrink: 1;
     padding: 55px 30px 0 55px;
     margin-bottom: 55px;
-    border-color: #e81c23;
-    border-right: solid #e81c23;
+    border-color: #ffc107;
+    border-right: solid #ffc107;
     border-width: 10px;
   }
   .c-issueBillboard-hd > * {
@@ -5391,12 +5408,12 @@ a.c-hdgSerif {
     flex-shrink: 0;
     padding: 0 15px 55px 30px;
     margin: 55px 20px 0 0;
-    border-left-color: #e81c23;
-    border-bottom-color: #e81c23;
+    border-left-color: #ffc107;
+    border-bottom-color: #ffc107;
     border-left-width: 10px;
     border-bottom-width: 10px;
-    border-top: 10px #e81c23;
-    border-right: 10px solid #e81c23;
+    border-top: 10px #ffc107;
+    border-right: 10px solid #ffc107;
   }
   .c-issueBillboard-bd > * {
     flex-grow: 0;
@@ -5440,7 +5457,7 @@ a.c-hdgSerif {
   content: "";
   display: block;
   position: absolute;
-  background-color: #e81c23;
+  background-color: #ffc107;
   transform: translateZ(0);
 }
 .c-loader_inverted:after,
@@ -5597,7 +5614,7 @@ a.c-mobileNav-branding {
   background-color: #fff !important;
 }
 .c-note-hd {
-  border-bottom: 4px solid #e81c23;
+  border-bottom: 4px solid #ffc107;
   margin-bottom: 6px;
   padding-left: 2px;
   padding-bottom: 0;
@@ -5661,7 +5678,7 @@ a.c-mobileNav-branding {
   min-width: 40px;
   padding: 0 6px;
   border: 1px solid #e2e2e2;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   color: #767676;
@@ -5671,8 +5688,8 @@ a.c-mobileNav-branding {
 }
 .c-pagination-control.isActive,
 .c-pagination-control:hover {
-  color: #e81c23;
-  fill: #e81c23;
+  color: #ffc107;
+  fill: #ffc107;
 }
 @media only screen and (min-width: 668px) {
   .c-pagination-select {
@@ -5687,7 +5704,7 @@ a.c-mobileNav-branding {
   box-sizing: border-box;
   display: block;
   padding: 11px 0;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.0625rem;
   letter-spacing: 1.36px;
   text-align: center;
@@ -5719,7 +5736,7 @@ a.c-mobileNav-branding {
   outline: none;
 }
 .c-pianoList-link[aria-expanded="true"] {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-pill {
   background-color: rgba(232, 28, 35, 0.2);
@@ -5743,7 +5760,7 @@ a.c-pill:hover {
   color: inherit;
 }
 .c-pill_selection {
-  border: 1px solid #e81c23;
+  border: 1px solid #ffc107;
   margin-bottom: 0;
   padding-right: 32px;
   position: relative;
@@ -5794,13 +5811,27 @@ a.c-pill:hover {
   z-index: -1; /* Place the pattern behind the app bar */
   background-position: "bottom";
 }
+.appfooter::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height based on your design */
+  background-image: url("/spreader.png"); /* Replace with the correct path to your pattern image */
+  background-repeat: repeat-x; /* Repeat the pattern horizontally */
+  background-size: auto 100%; /* Adjust the pattern size */
+  z-index: -1; /* Place the pattern behind the app bar */
+  background-position: "bottom";
+}
 /* mobile */
 .sublist.expanded {
   display: block;
 }
 
 /* .list-item-text {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 12.37px;
   text-decoration-style: solid;
   font-weight: 400;
@@ -5824,21 +5855,55 @@ a.c-pill:hover {
 }
 
 .drawer-item {
-  padding: 0;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+
+.drawer-item-icons {
+  padding: 40px;
+
+  display: flex;
   margin-bottom: 20px;
   position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.center-icons{
+  text-align: center;
+  flex: auto;
+}
+
+
+.drawer-item-icons-element:hover {
+  color: #ffc107;
+}
+
+.drawer-item-icons-element {
+  margin-left: 15px;
+  list-style-type: none;
 }
 
 .drawer-link {
   text-decoration: none;
-  font-family: "canada-type-gibson", Gill Sans, Gill Sans MT, Calibri,
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri,
     sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 1.36px;
   line-height: 19.37px;
   text-align: center;
   color: black;
+}
+.drawer-link.expanded {
+  color: #ffc107;
 }
 
 .drawer-link:hover {
@@ -5851,29 +5916,28 @@ a.c-pill:hover {
   margin: 0;
   display: none;
 }
-
-.drawer-item:hover .sublist {
-  display: block;
+.sublist-item-style{
+  padding: 25px 20px 10px 10px;
 }
 
 .sublist-item {
   padding: 0;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
 .sublist-link {
   text-decoration: none;
-  font-family: "canada-type-gibson", Gill Sans, Gill Sans MT, Calibri,
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri,
     sans-serif;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 1.36px;
   line-height: 19.37px;
   text-align: left;
-  color: rgb(99, 90, 90);
+  color: rgb(83, 80, 80);
   display: block;
-  padding: 0px 0px 0px 40px ;
+  padding: 0px 0px 0px 60px ;
 }
 
 .sublist-link:hover {
@@ -5885,8 +5949,8 @@ a.c-pill:hover {
   height: 1px;
   background-color: #ccc;
   width: 100%;
-  margin-top: 15px; /* Add margin to space the dividers */
-  margin-bottom: 5px;
+  margin-top: 0px; /* Add margin to space the dividers */
+  margin-bottom: 0px;
 }
 
 .desktop-nav {
@@ -5899,7 +5963,7 @@ a.c-pill:hover {
   display: flex;
   justify-content: space-between;
   position: relative;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1rem; /* Adjust this to your preferred font size */
   letter-spacing: 1.36px;
   text-transform: uppercase;
@@ -5980,8 +6044,8 @@ a.c-pill:hover {
 p.c-pullquote-quote {
   margin-bottom: 15px;
   position: relative;
-  color: #e81c23;
-  font-family: "Cormorant Garamond", Garamond, canada-type-gibson, Gill Sans,
+  color: #ffc107;
+  font-family: "EB Garamond", Garamond, Lato, Gill Sans,
     Gill Sans MT, Calibri, sans-serif;
   font-size: 1.5625rem;
   font-style: italic;
@@ -5999,7 +6063,7 @@ p.c-pullquote-quote {
 .c-pullquote-meta {
   position: relative;
   color: #9a9a9a;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1rem;
   font-style: italic;
@@ -6040,7 +6104,7 @@ p.c-pullquote-quote {
   margin-top: 4px;
 }
 .c-navPanel-item {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.0625rem;
   text-decoration: none;
 }
@@ -6056,20 +6120,20 @@ p.c-pullquote-quote {
 .c-navPanel-item.active mark,
 .c-navPanel-item:hover em,
 .c-navPanel-item:hover mark {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-navPanel-item_pointed {
   color: #000;
   font-size: 0.9375rem;
 }
 .c-navPanel-item_pointed:hover {
-  color: #e81c23;
+  color: #ffc107;
   cursor: pointer;
   text-decoration: underline;
 }
 .c-navPanel-item_pointed.active,
 .c-navPanel-item_pointed.isActive {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-navPanel-item + .c-navPanel-item {
   margin-top: 10px;
@@ -6097,7 +6161,7 @@ p.c-pullquote-quote {
 }
 .c-shout {
   margin-left: -0.06em;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 36px;
   font-weight: 600;
   line-height: 0.8;
@@ -6108,7 +6172,7 @@ p.c-pullquote-quote {
   font-size: 30px;
 }
 .c-mix-shout_brand {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-mix-shout_lightest {
   color: #fff;
@@ -6321,7 +6385,7 @@ p.c-pullquote-quote {
   padding: 7px 10px;
   background-color: #000;
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-weight: 700;
   font-size: 0.9375rem;
   letter-spacing: 2.4px;
@@ -6371,9 +6435,9 @@ p.c-pullquote-quote {
   position: fixed;
   top: 40px;
   overflow: auto;
-  background-color: #e81c23;
+  background-color: #ffc107;
   color: #fff;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -6381,7 +6445,7 @@ p.c-pullquote-quote {
   z-index: 25;
 }
 .c-skippy:hover {
-  background-color: #a31418;
+  background-color: #ffa107;
 }
 .c-socialBlocks {
   display: flex;
@@ -6409,7 +6473,7 @@ p.c-pullquote-quote {
 }
 .c-socialBlocks > * > a:focus > svg,
 .c-socialBlocks > * > a:hover > svg {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .c-socialBlocks_inverse > * > a:hover > svg {
   fill: #fff;
@@ -6424,9 +6488,11 @@ p.c-pullquote-quote {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 .c-socialNav-item {
   margin-left: 6px;
+  list-style-type: none;
 }
 .c-socialNav-item:first-child {
   margin-left: 0;
@@ -6435,9 +6501,9 @@ p.c-pullquote-quote {
   display: flex;
   align-items: center;
   height: 36px;
-  color: #e81c23;
-  fill: #e81c23;
-  stroke: #e81c23;
+  color: #252523;
+  fill: #252523;
+  stroke: #252523;
   text-decoration: none;
   transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),
     fill 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),
@@ -6445,9 +6511,9 @@ p.c-pullquote-quote {
 }
 .c-socialNav-item a:focus,
 .c-socialNav-item a:hover {
-  color: #a31418;
-  fill: #a31418;
-  stroke: #a31418;
+  color: #ffa107;
+  fill: #ffa107;
+  stroke: #ffa107;
 }
 .c-mix-socialNav-item_pronounce {
   flex-basis: 100%;
@@ -6468,7 +6534,7 @@ p.c-pullquote-quote {
   }
   .c-socialNav-item + .c-mix-socialNav-item_pronounce {
     padding: 0 0 0 25px;
-    border-color: #e81c23;
+    border-color: #ffc107;
     border-width: 0 0 0 1px;
     margin: 0 0 0 25px;
   }
@@ -6766,10 +6832,14 @@ p.c-pullquote-quote {
   }
 }
 .c-taxList {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
-  font-size: 0.9375rem;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-size: 0.8375rem;
+  list-style-type: none;
 }
 .c-taxList > * > ul > li + li {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
   margin-top: 10px;
 }
 .c-taxList > li:first-child {
@@ -6783,9 +6853,12 @@ p.c-pullquote-quote {
   letter-spacing: normal;
   line-height: 1.231;
   text-transform: none;
+list-style-type: none;
+padding: 0px 0px 20px 0px;
 }
 .c-taxList a {
   text-decoration: none;
+  color: black;
 }
 .c-tier {
   background-color: #fff;
@@ -6820,7 +6893,7 @@ p.c-pullquote-quote {
   border-top-width: 1px;
 }
 .c-tier_weighted_brand {
-  border-top-color: #e81c23;
+  border-top-color: #ffc107;
 }
 .c-tier_tabbed {
   background-color: #f1efea;
@@ -7094,7 +7167,7 @@ p.c-pullquote-quote {
   }
   .c-timelineNav-list-link:focus:after,
   .c-timelineNav-list-link:hover:after {
-    background-color: #e81c23;
+    background-color: #ffc107;
   }
   .c-timelineNav-list-link.c-timelineNav-list-link:focus:before,
   .c-timelineNav-list-link.c-timelineNav-list-link:hover:before,
@@ -7111,7 +7184,7 @@ p.c-pullquote-quote {
   }
   .c-timelineNav-list-link.c-timelineNav-list-link:focus:before,
   .c-timelineNav-list-link.c-timelineNav-list-link:hover:before {
-    background-color: #e81c23;
+    background-color: #ffc107;
   }
   .c-timelineNav-list-link.isActive .c-timelineNav-list-link-txt,
   .c-timelineNav-list-link:focus .c-timelineNav-list-link-txt,
@@ -7130,7 +7203,7 @@ p.c-pullquote-quote {
   display: inline-block;
 }
 .c-txt_callout {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.3125rem;
   font-weight: 300;
   line-height: 1;
@@ -7149,7 +7222,7 @@ p.c-pullquote-quote {
 }
 .c-txt_auxMeta,
 .c-txt_colossal {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_colossal {
   font-size: 2.1875rem;
@@ -7166,7 +7239,7 @@ a.c-txt_colossal {
 }
 .c-txt_elegant,
 .c-txt_label {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_label {
   font-size: 0.9375rem;
@@ -7186,7 +7259,7 @@ a.c-txt_colossal {
 }
 .c-txt_substantial {
   display: block;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.25rem;
 }
 .c-txt_substantial > :first-child,
@@ -7201,12 +7274,12 @@ a.c-txt_colossal {
   font-weight: 600;
 }
 .c-txt_miniBody {
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 0.9375rem;
 }
 .c-txt_extremeMeta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.231;
 }
@@ -7214,8 +7287,8 @@ a.c-txt_colossal {
   line-height: 1;
 }
 .c-txt_tag {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
-  font-size: 1.125rem;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-size: 0.825rem;
   font-weight: 600;
   letter-spacing: 1.98px;
   text-transform: uppercase;
@@ -7232,7 +7305,7 @@ a.c-txt_tag {
   line-height: 1.231;
 }
 .c-txt_exhibitMeta {
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 0.9375rem;
 }
@@ -7245,7 +7318,7 @@ a.c-txt_tag {
 }
 .c-txt_austere,
 .c-txt_emphatic {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_emphatic {
   font-size: 1.25rem;
@@ -7255,14 +7328,14 @@ a.c-txt_tag {
 }
 .c-txt_fanciful {
   color: #535353;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 1rem;
   font-style: italic;
 }
 .c-txt_meta {
   color: #2b2b2b;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
 }
 .c-txt_meta_actionLabel {
@@ -7281,10 +7354,10 @@ a.c-txt_tag {
 }
 .c-txt_catMeta,
 .c-txt_poetMeta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_catMeta {
-  color: #e81c23;
+  color: #ffc107;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1.68px;
@@ -7301,7 +7374,7 @@ a.c-txt_tag {
 }
 .c-txt_attribution {
   color: #494949;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -7316,13 +7389,13 @@ a.c-txt_tag {
   display: block;
 }
 .c-txt_attribution_specialLink a {
-  color: #e81c23;
+  color: #ffc107;
   font-weight: 600;
 }
 .c-txt_attribution_piped:after {
   content: "|";
   display: inline-block;
-  color: #e81c23;
+  color: #ffc107;
   padding: 0 4px;
 }
 .c-txt_attribution_normal {
@@ -7332,8 +7405,8 @@ a.c-txt_tag {
   font-weight: 600;
 }
 .c-txt_herald {
-  color: #e81c23;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  color: #ffc107;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 2.56px;
@@ -7343,7 +7416,7 @@ a.c-txt_tag {
   color: #000;
 }
 .c-txt_ctaCopy {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 1.3125rem;
   font-weight: 300;
   line-height: 1.231;
@@ -7356,7 +7429,7 @@ a.c-txt_tag {
 }
 .c-txt_dateMeta,
 .c-txt_eventMeta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
   line-height: 1.45;
 }
@@ -7364,7 +7437,7 @@ a.c-txt_tag {
   font-weight: 400;
 }
 .c-txt_taxLabel {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -7373,12 +7446,12 @@ a.c-txt_tag {
 }
 .c-txt_minimalCta {
   color: #000;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
 }
 .c-txt_minimalCta_brand {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-txt_minimalCta_outstanding {
   letter-spacing: 0.067em;
@@ -7392,7 +7465,7 @@ a.c-txt_tag {
   text-decoration: none;
 }
 .c-txt_minimalCta.isActive {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-txt_minimalCta_icon {
   display: inline-flex;
@@ -7401,7 +7474,7 @@ a.c-txt_tag {
     fill 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .c-txt_minimalCta_icon:hover {
-  fill: #e81c23;
+  fill: #ffc107;
 }
 .c-txt_minimalCta_icon > .icon {
   margin-left: 6px;
@@ -7431,7 +7504,7 @@ a.c-txt_tag {
   stroke: #3c3c3c;
 }
 .c-txt_minimalCta_action {
-  color: #e81c23;
+  color: #ffc107;
   font-weight: 400;
   letter-spacing: normal;
   text-decoration: underline;
@@ -7446,7 +7519,7 @@ a.c-txt_tag {
 .c-txt_filterAction {
   position: relative;
   color: #767676;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -7458,12 +7531,12 @@ a.c-txt_tag {
   width: 100%;
   bottom: -4px;
   position: absolute;
-  background-color: #e81c23;
+  background-color: #ffc107;
   opacity: 0;
   transition: opacity 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .c-txt_filterAction.isActive {
-  color: #e81c23;
+  color: #ffc107;
 }
 .c-txt_filterAction.isActive:after,
 .c-txt_filterAction:focus:after,
@@ -7488,14 +7561,14 @@ a.c-txt_tag {
 }
 .c-txt_navAction {
   color: #000;
-  font-family: "Cormorant Garamond", adobe-garamond-pro, Garamond, Baskerville,
+  font-family: "EB Garamond", adobe-garamond-pro, Garamond, Baskerville,
     Baskerville Old Face, Hoefler Text, Times New Roman, serif;
   font-size: 0.8125rem;
   font-style: italic;
   font-weight: 600;
 }
 .c-txt_abstract {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -7503,7 +7576,7 @@ a.c-txt_tag {
   font-weight: 700;
 }
 .c-txt_serialMeta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
 }
 .c-txt_serialMeta_emphatic {
@@ -7520,7 +7593,7 @@ a.c-txt_tag {
 }
 .c-txt_note,
 .c-txt_preamble {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_note {
   color: #767676;
@@ -7545,7 +7618,7 @@ a.c-txt_tag {
 }
 .c-txt_labelMaker,
 .c-txt_origin {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   text-transform: uppercase;
 }
 .c-txt_origin {
@@ -7565,7 +7638,7 @@ a.c-txt_tag {
 }
 .c-txt_slideWayfinding {
   color: #767676;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.8125rem;
 }
 .c-txt_slideCaption {
@@ -7579,7 +7652,7 @@ a.c-txt_tag {
   text-decoration: none;
 }
 .c-txt_slideTriggerCta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
   color: inherit;
   line-height: 1.2;
@@ -7597,7 +7670,7 @@ a.c-txt_tag {
 }
 .c-txt_filterLabel,
 .c-txt_starkMeta {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 .c-txt_filterLabel {
   color: #000;
@@ -7609,7 +7682,7 @@ a.c-txt_tag {
   letter-spacing: 0.12em;
 }
 .c-txt_annual {
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
 }
@@ -7783,8 +7856,8 @@ a .mix-txt_brand_pure {
 .c-utilityAction {
   align-items: center;
   display: flex;
-  color: #e81c23;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  color: #ffc107;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 1.82px;
@@ -7821,7 +7894,7 @@ a .mix-txt_brand_pure {
   display: flex;
   justify-content: flex-end;
   padding-top: 8px;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.9375rem;
   white-space: nowrap;
 }
@@ -7901,7 +7974,7 @@ a .mix-txt_brand_pure {
 }
 .c-userContent a:focus,
 .c-userContent a:hover {
-  color: #e81c23;
+  color: #ffc107;
   text-decoration: underline;
 }
 .c-userContent p {
@@ -8183,8 +8256,8 @@ a .mix-txt_brand_pure {
 .c-validationList > * {
   padding-left: 18px;
   position: relative;
-  color: #e81c23;
-  font-family: canada-type-gibson, Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  color: #ffc107;
+  font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -8293,7 +8366,7 @@ c-vignette-cta {
 }
 .c-vList_dropDown > * > a:focus,
 .c-vList_dropDown > * > a:hover {
-  color: #e81c23;
+  color: #ffc107;
   text-decoration: underline;
 }
 .c-vList_dropDown > * + * {
@@ -8407,7 +8480,7 @@ c-vignette-cta {
   background-color: #fff;
 }
 .c-well_minimal_rococo {
-  border: 4px double #e81c23;
+  border: 4px double #ffc107;
 }
 .c-well_placard {
   border: none;
@@ -8618,7 +8691,6 @@ c-vignette-cta {
   .c-txt_minimalCta,
   .o-article-bd .o-grid-col_3of12,
   .o-article-bd img,
-  .o-footer-icons,
   .o-mastheadSmall,
   .o-mediaEnclosure,
   .o-stereo,

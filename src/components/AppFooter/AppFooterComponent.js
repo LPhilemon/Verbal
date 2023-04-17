@@ -1,306 +1,362 @@
-<div class="o-site-ft">
-            <div class="o-wrapper">
-                <div class="o-footer">
-                    <div class="o-footer-primary u-showAboveSmall">
-                        
-<ul class="o-blocks o-blocks_5up@sm o-blocks_9up@xlg">
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/poems">Poems</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poems/browse">All Poems</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poems/guides">Poem Guides</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poems/browse#page=1&amp;sort_by=recently_added&amp;filter_poetry_audio=1">Audio Poems</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/collections">Collections</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/poets">Poets</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poets/browse">All Poets</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/articles">Articles</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/articles/category/essays">Essays</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/articles/category/interview">Interviews</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/articles/category/profile">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/articles/browse">All Articles</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/video">Video</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/video/browse">All Video</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/podcasts">Podcasts</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/podcasts/browse">All Podcasts</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/podcasts/series/74634/audio-pod">Audio Poem of the Day</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/learn">Learn</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/learn/children">Children</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/learn/teens">Teens</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/learn/adults">Adults</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/learn/educators">Educators</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/learn/glossary-terms">Glossary of Poetic Terms</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/foundation/poetry-out-loud">Poetry Out Loud</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/events">Events</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/events/browse">All Past Events</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/exhibitions">Exhibitions</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/poetrymagazine"><i>Poetry</i> Magazine</a>
-                <ul>
-                    <li>
-                        <a href="    https://www.poetryfoundation.org/poetrymagazine/issue/159596/march-2023">Current Issue</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poetrymagazine/archive"><i>Poetry</i> Magazine Archive</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poetrymagazine/subscribe">Subscriptions</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poetrymagazine/about">About the Magazine</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poetrymagazine/submit">How to Submit</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/poetrymagazine/advertise">Advertise with Us</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <ul class="c-taxList">
-            <li>
-                <a href="https://www.poetryfoundation.org/foundation/about">About Us</a>
-                <ul>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/give">Give</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/visit">Visit</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/library">Library</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/harriet-books/browse/category/foundation-news">Foundation News</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/awards-grants">Awards & Grants</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/foundation/media">Media Partnerships</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/foundation/people">People</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/foundation/press">Press Releases</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/contact">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="https://www.poetryfoundation.org/foundation/jobs">Jobs</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
-                    </div>
-                    <div class="o-footer-secondary">
-                        <div class="o-footer-split">
-                            <div class="o-footer-split-primary">
-                                <a href="https://www.poetryfoundation.org/">
-                                    <svg viewBox="0 0 272.4 358.9"><style>.st0{fill:none;stroke:#ED1C24;stroke-width:3.64;stroke-miterlimit:10;} .st1{fill:#ED1C24;} .st2{fill:#FFFFFF;}</style><path class="st0" d="M0 197.1h197.5M0 98.3h197.5M98.8 0v295.8"/><path d="M209.1 305.3c0 .3-1.8-.2-1.8.8s4.3 0 4.3.4-1.9 0-1.9.7 3.5-.1 3.5.3-1.2 0-1.2.6c0 .3.8.3 1.4.3 2.5.1 5.1.3 7.5.6 14.9 1.6 29.1 5 31.8 6.7 2.1-4.5-10.2-6.8-21.2-9-9.4-1.9-25.7-3.6-25.7-2.1.1 1.1 3.2.3 3.3.7m42.5 37.3c.4.5.3 1.2-.5 2.1-2.3 2.5-9.8 6.3-14.5 4.3.7-1 1.8-1.6 3-1.9.1.6.7 1.1 1.4.9.3-.1.7-.3.8-.6 1.2-.3 2.3-.7 3.5-1.2 2-.9 3.6-1.8 3.3-2.4s-7.6-1.7-7.8-1.8l-.2.1c-2.5.8-5 1.2-7.6 1.2-2.1 0-4.1-.2-6.1-.7-.2 0-2-.6-2-.6-.6-.2-1.1-.3-1.7-.3-.9 0-1.8.2-2.6.7 0 0-12.1 6.8-22.3 11.9-5.9 3-9.6 4.7-13.5 4.5.4-1.1 1.2-2.1 2.2-2.8 0 0 1.3 2.3 2.4-.1 3.5-.9 6.6-2.9 8.8-5.6 1.1-1.3 2.5-2.4 4-3.2 2.2-1.2 4.9-2.9 5.1-4v-.2c-.4-2.6.3-5.2 2-7.3.5-.7-1.9-1.9-6.8 0-2.9 1.1-6.5 2.8-6.8 2.6-.2-.2 1.4-1.2 3.4-2.1 1.4-.6 2.9-1 2.7-1.2-.2-.2-2.9.7-4.7 1.5-2.3 1-4.4 2.1-4.7 1.9-.4-.3 1.9-1.3 4.3-2.4 2.1-1 3.2-1.4 3-1.6s-1.7.4-4.1 1.3c-2.7 1-5.5 2.6-5.8 2.4-.2-.3 2.2-1.6 4.7-2.7 2.1-.9 2.8-1.2 2.6-1.4-.2-.2-1.1.2-4 1.2-3.1 1.1-5.8 2.9-6.1 2.6s1.7-1.3 3.9-2.4c2.3-1.1 3.3-1.4 3-1.6-.3-.3-1.9.4-4.7 1.5-2.9 1.1-5.6 2.7-5.8 2.5-.2-.3 1.9-1.3 4.4-2.6 2.2-1.1 2.9-1.4 2.7-1.6s-2.1.6-4.7 1.6c-2.9 1.1-4.8 2.4-5.1 2.1s1.4-1.1 3.7-2.1 4-1.5 3.7-1.8-8.9 3.3-9.2 3.1c-.3-.2 1-.7 3.6-1.8 2.1-.8 3.6-1.3 3.4-1.4s-.8.1-2.9.8c-2.1.7-5.7 2.4-5.9 2.1s1.6-1 3.3-1.7c1.4-.5 2.7-.9 2.5-1-.4-.2-2.4.6-4.4 1.3-1.7.5-3.1 1.1-3.2.8s1.5-.8 3-1.2c1.1-.3 1.7-.5 1.6-.7-.7-.1-1.4 0-2 .2-.6.2-2.3.6-2.4.4-.2-.7 9.2-2.4 16.4-2.9 13-.9 17.9 2.5 18.6 3h.2c6.1-3.8 12.4-2.6 13.6-2.6-.9-1.2.4-1.2.5-1.7 0-.4-1-.5-1.1-1.3 0-.9 1-.8 1-1.2s-.6-.2-.6-1 1-.4 1-.9-.6-.6-.6-1.3.9-.5.9-1c-.1-.4-.4-.8-.9-.8-1.8-.5-12.1-.5-12.4-1.2-.3-.8.4-.8.4-1 0-.2-2.6-.5-5.1-.4-1.4 0-1.8-.5-1.7-1 .1-.4-.2-.7-.5-.8h-.3c-1.8.1-2.5 0-2.5-.8 0-.5.4-1.1-1.1-.9-1.2.1-.7-.4-.9-1-.1-.6-2.1.4-2.1-.5 0-1.7-2.9.1-3-1.2s3.3-.6 3.3-1.5c0-.7-5 .6-6.2.6-1.2.1-.9-.3-1.1-.8s-3.4.5-3.4-.1.9-.3.8-.8-3.5.8-3.6-.3c-.1-1.3 19.5-2.9 35.3-1.3 16.3 1.7 31.7 5.6 32.3 7 .5 1.2-1.5 1.6-3.9 4.4-1.7 2.2-3 4.7-3.9 7.4h.1c3.2-.9 6.3-2.3 9-4.1 2.1-1.3 4.3-2.4 6.5-3.3.9-.4.8-2.3 1-2.4.4-.2.3 1.9 1 1.7.8-.2.2-1.7.4-1.8s.8.8.9 1.8c0 .1.1.2.2.2 2.2.8 8.5 3.4 8.1 5.3-.3 1.3-1.9 1-3 .8-1.1-.1-2.3-.1-3.4.1-1.4.5-2.4.6-3.3.1l-.1.1c-.7.3-2 1.1-2 1.1-2.5 1.6-4.8 3.6-6.7 5.8-1.3 1.5-2.9 2.9-4.5 4.1v.1c.6.2 6.5 1.8 7 1.9s2.5.9.8 3.2-7.6 7.4-12.1 6.8c.5-.9 1.3-1.7 2.2-2.2 0 0 1.2 1.6 1.9-.3 2.3-1.3 4.3-2.9 6.1-4.9.1-.1-.1-.2-.2-.2l-3.1.1-.1.3zM177 111h-55.5v13.7h19.1v60.2h17.3v-60.2H177zM72.6 170.6H41v-17.2h28.9v-13.8H41v-15.1h30.6v-13.8H23.8v73.9h48.8zM188.4 49.4c0-23.9-17.2-38.2-39.2-38.2S110 25.6 110 49.4s17.2 38.1 39.2 38.1 39.2-14.2 39.2-38.1m-17.5-.4c0 14.1-9.3 23.1-21.6 23.1s-21.6-9-21.6-23.1 9.3-23 21.6-23c12.2 0 21.6 9 21.6 23M77.2 35.7c0-7.9-2.8-13.6-7.7-17.7s-11.7-5.6-19.3-5.6H23.8v73.9h17.4V59h9.1c7.6 0 14.4-1.5 19.3-5.6s7.6-9.8 7.6-17.7m-17.6 0c0 3.8-1.5 6.4-3.5 7.9s-4.6 2-8.4 2H41V25.8h6.8c3.8 0 6.2.5 8.4 2s3.4 4.1 3.4 7.9M164.4 209.5l-15.2 29.4-15.1-29.4h-19.2l25.7 44v29.9h17.3v-29.9l25.7-44zM61 252.9c5.4-1.7 14.4-7.2 14.4-21.2.2-6.6-2.8-12.9-8.1-16.9-4.8-3.5-11.2-5.2-19.5-5.2H21.2v73.9h17.4v-28.3h5.5l15.5 28.3h20.1L61 252.9zm-3-20.6c.2 3-1.2 5.9-3.8 7.5-2.1 1.6-4.9 2-8.9 2h-6.9v-19h6.9c4 0 6.8.3 8.9 1.9 2.5 1.7 3.9 4.6 3.8 7.6"/><path class="st1" d="M205.8 96.5h33.8v199.4h-33.8z"/><path class="st2" d="M215.5 273.3v8.9h14.3v-3.3h-5.4v-5.3h-2.7v5.3h-3.5v-5.6h-2.7zm7.2-21.1c-4.6 0-7.4 3.3-7.4 7.6s2.8 7.6 7.4 7.6 7.4-3.3 7.4-7.6-2.8-7.6-7.4-7.6m-.1 3.4c2.3.1 4.1 2.1 3.9 4.4-.1 2.3-2.1 4.1-4.4 3.9-2.2-.1-4-2-4-4.2 0-2.3 1.8-4.2 4.1-4.2.2.1.3.1.4.1m-7-21.7v3.4h8.3c.8-.1 1.7.1 2.4.6 1.1 1.1 1.2 2.9.1 4l-.1.1c-.7.5-1.5.7-2.4.6h-8.3v3.4h8.3c1.6.2 3.2-.3 4.5-1.4 2.3-2.7 2.3-6.6 0-9.3-1.1-1-2.5-1.4-4.5-1.4h-8.3zm0-20.2v3.3h6.5c1.5 0 3.1-.1 3.1-.1l-9.6 6.1v3.6h14.3v-3.3h-6.4c-1.5 0-3.2.1-3.2.1l9.7-6.3v-3.4h-14.4zm7.1-19.9c-2.1-.1-4.1.7-5.4 2.3-1.2 1.6-1.8 3.5-1.7 5.5v4.9h14.3v-4.8c.1-2-.5-3.9-1.7-5.5-1.4-1.6-3.4-2.5-5.5-2.4m0 3.4c1.2-.1 2.4.4 3.3 1.3.7.8 1.1 1.9 1 3v1.7h-8.6v-1.7c-.1-1.1.3-2.2 1-3 .8-.9 2-1.3 3.3-1.3m-7.2-16.8v3.5l14.3 5.4v-3.6l-2.9-1v-5.1l2.9-1V175l-14.3 5.4zm8.8 3.6l-5.1-1.8 5.1-1.8v3.6zm-8.8-23.5v10.8h2.6v-3.7h11.6v-3.4h-11.6v-3.7h-2.6zm0-6.6h14.3v-3.4h-14.3v3.4zm7.2-25c-4.6 0-7.4 3.3-7.4 7.6s2.8 7.6 7.4 7.6 7.4-3.3 7.4-7.6-2.8-7.6-7.4-7.6m-.1 3.4c2.3.1 4.1 2.1 3.9 4.4-.1 2.3-2.1 4.1-4.4 3.9-2.2-.1-4-2-3.9-4.2 0-2.3 1.8-4.2 4.1-4.2.1.1.2.1.3.1m-7.1-22.3v3.3h6.5c1.5 0 3.1-.1 3.1-.1l-9.6 6.1v3.6h14.3v-3.3h-6.4c-1.5 0-3.2.1-3.2.1l9.7-6.3V110h-14.4z"/></svg>
-                                </a>
-                            </div>
-                            <div class="o-footer-split-secondary">
-                                <div class="o-footer-icons">
-                                    
-<ul class="c-socialNav">
-    <li class="c-socialNav-item">
-        <a href="https://twitter.com/poetryfound" target="_blank">
-                
-            <svg class="icon icon_twitter mix-icon_inherit" role="img" aria-labelledby="title-95">
-                    <title id="title-95">Twitter</title>
-                            <desc id="desc-95">Find us on Twitter</desc>
-                <use xlink:href="#icon_twitter"></use>
-    </svg>
+import React from "react";
+import { styles } from "@mui/material/styles";
+import Image from "next/image";
 
-        </a>
-    </li>
-    <li class="c-socialNav-item">
-        <a href="https://www.facebook.com/poetryfoundation" target="_blank">
-                
-            <svg class="icon icon_facebook mix-icon_inherit" role="img" aria-labelledby="title-5208">
-                    <title id="title-5208">Facebook</title>
-                            <desc id="desc-5208">Find us on Facebook</desc>
-                <use xlink:href="#icon_facebook"></use>
-    </svg>
+const AppFooter = () => {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="appfooter">
+      {/* <footer className={styles.footer}> */}
+      {/* Add your footer content here */}
+      <div class="o-site-ft">
+        <div class="o-wrapper">
+          <div class="o-footer">
+            <div class="o-footer-primary u-showAboveSmall">
+              <ul class="o-blocks o-blocks_5up@sm o-blocks_9up@xlg">
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/poems">Poems</a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/poems/browse">
+                            All Poems
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/poems/guides">
+                            Poem Guides
+                          </a>
+                        </li>
 
-        </a>
-    </li>
-    <li class="c-socialNav-item">
-        <a href="https://www.instagram.com/poetryfoundation/" target="_blank">
-                
-            <svg class="icon icon_instagram mix-icon_inherit" role="img" aria-labelledby="title-2359">
-                    <title id="title-2359">Instagram</title>
-                            <desc id="desc-2359">Find us on Instagram</desc>
-                <use xlink:href="#icon_instagram"></use>
-    </svg>
+                        <li>
+                          <a href="https://www.--foundation.org/collections">
+                            Collections
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/poets">Authors</a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/poets/browse">
+                            All Poets
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/articles">
+                        Articles
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/articles/category/essays">
+                            Essays
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/articles/category/interview">
+                            Interviews
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/articles/category/profile">
+                            Profiles
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/articles/browse">
+                            All Articles
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/video">Jumbled</a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/video/browse">
+                            Top Articles
+                          </a>
+                          <a href="https://www.--foundation.org/video/browse">
+                            Top Poems
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-        </a>
-    </li>
-    <li class="c-socialNav-item c-mix-socialNav-item_pronounce">
-        <a href="https://www.facebook.com/poetryfoundationchildren" target="_blank">
-                
-            <svg class="icon icon_facebookReversed mix-icon_inherit" role="img" aria-labelledby="title-6526">
-                    <title id="title-6526">Facebook</title>
-                            <desc id="desc-6526">Find us on Facebook</desc>
-                <use xlink:href="#icon_facebookReversed"></use>
-    </svg>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/learn">
+                        Book Reviews
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/learn/children">
+                            Children
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/learn/teens">
+                            Teens
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/learn/adults">
+                            Adults
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-            <span class="c-txt c-txt_meta c-mix-txt_inherit">Poetry Foundation Children</span>
-        </a>
-    </li>
-    <li class="c-socialNav-item c-mix-socialNav-item_pronounce">
-        <a href="https://twitter.com/poetrymagazine" target="_blank">
-                
-            <svg class="icon icon_twitter mix-icon_inherit" role="img" aria-labelledby="title-6565">
-                    <title id="title-6565">Twitter</title>
-                            <desc id="desc-6565">Find us on Twitter</desc>
-                <use xlink:href="#icon_twitter"></use>
-    </svg>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/--magazine">
+                        <i>Inverbally</i> Magazine
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="    https://www.--foundation.org/--magazine/issue/159596/march-2023">
+                            Current Issue
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/--magazine/archive">
+                            <i>Inverbally</i> Other Issues
+                          </a>
+                        </li>
 
-            <span class="c-txt c-txt_meta c-mix-txt_inherit"><i>Poetry</i> Magazine</span>
-        </a>
-    </li>
-</ul>                                </div>
-                                <div class="o-footer-utility">
-                                    <ul class="o-hList o-hList_inline@small">
-    <li>
-        <a href="https://www.poetryfoundation.org/contact" class="c-txt c-txt_austere">Contact Us</a>
-    </li>
-    <li>
-        <a href="https://www.poetryfoundation.org/newsletter" class="c-txt c-txt_austere">Newsletters</a>
-    </li>
-    <li>
-        <a href="https://www.poetryfoundation.org/foundation/press" class="c-txt c-txt_austere">Press</a>
-    </li>
-    <li>
-        <a href="https://www.poetryfoundation.org/foundation/privacy" class="c-txt c-txt_austere">Privacy Policy</a>
-    </li>
-    <li>
-        <a href="https://www.poetryfoundation.org/foundation/terms-of-service" class="c-txt c-txt_austere">Terms of Use</a>
-    </li>
-    <li>
-        <a href="https://www.poetryfoundation.org/foundation/mobile" class="c-txt c-txt_austere">Poetry Mobile App</a>
-    </li>
-</ul>
-                                </div>
-                                <div class="o-footer-auxiliary" role="contentinfo">
-                                    <ul class="o-hList o-hList_inline@med o-hList_compressed o-hList_compressed_asymmetrical">
-    <li>
-        <span class="c-txt c-txt_meta">61 West Superior Street,<br class="u-hideAboveSmall" /> Chicago, IL 60654</span>
-    </li>
-        <li>
-        <small class="c-txt c-txt_meta">&copy; 2023 Poetry Foundation</small>
-    </li>
-</ul>                                </div>
-                                <div class="o-footer-ancillary">
-                                    <a href="https://www.poetryfoundation.org/contact?subject=problem" class="c-txt c-txt_minimalCta">See a problem on this page?</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <li>
+                          <a href="https://www.--foundation.org/--magazine/about">
+                            About the Magazine
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/--magazine/submit">
+                            How to Submit
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/--magazine/advertise">
+                            Advertise with Us
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="c-taxList">
+                    <li>
+                      <a href="https://www.--foundation.org/foundation/about">
+                        About Us
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="https://www.--foundation.org/give">Give</a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/visit">Visit</a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/library">
+                            Library
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/harriet-books/browse/category/foundation-news">
+                            News
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="https://www.--foundation.org/foundation/media">
+                            Media Partnerships
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="https://www.--foundation.org/contact">
+                            Contact Us
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.--foundation.org/foundation/jobs">
+                            Jobs
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+            <div class="o-footer-primary">
+              <div class="o-footer-split">
+
+                <div class="o-footer-split-primary">
+                  <div class="o-footer-icons">
+                    <ul class="c-socialNav">
+                      <li class="c-socialNav-item">
+                        <a
+                          href="https://twitter.com/inverbally"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            width="24"
+                            height="24"
+                          >
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="c-socialNav-item">
+                        <a
+                          href="https://www.facebook.com/inverbally"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            width="24"
+                            height="24"
+                          >
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="c-socialNav-item">
+                        <a
+                          href="https://www.instagram.com/inverbally/"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            width="24"
+                            height="24"
+                          >
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="c-socialNav-item c-mix-socialNav-item_pronounce">
+                        <a
+                          href="https://twitter.com/inverbally"
+                          target="_blank"
+                        >
+                          {/* <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" width="24" height="24"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> */}
+
+                          <span class="c-txt c-txt_meta c-mix-txt_inherit">
+                            <i>Inverbally</i> Magazine
+                          </span>
+                        </a>
+                      </li>
+                    </ul>{" "}
+                  </div>
+                  <div class="o-footer-utility">
+                    <ul class="o-hList o-hList_inline@small">
+                      <li>
+                        <a
+                          href="https://www.--foundation.org/contact"
+                          class="c-txt c-txt_austere"
+                        >
+                          Contact Us
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.--foundation.org/newsletter"
+                          class="c-txt c-txt_austere"
+                        >
+                          Newsletters
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.--foundation.org/foundation/press"
+                          class="c-txt c-txt_austere"
+                        >
+                          Press
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.--foundation.org/foundation/privacy"
+                          class="c-txt c-txt_austere"
+                        >
+                          Privacy Policy
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.--foundation.org/foundation/terms-of-service"
+                          class="c-txt c-txt_austere"
+                        >
+                          Terms of Use
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="o-footer-auxiliary" role="contentinfo">
+                    <ul class="o-hList o-hList_inline@med o-hList_compressed o-hList_compressed_asymmetrical">
+                      <li>
+                        <span class="c-txt c-txt_meta">
+                          Kampala
+                          <br class="u-hideAboveSmall" /> Uganda
+                        </span>
+                      </li>
+                      <li>
+                        <small class="c-txt c-txt_meta">
+                          &copy; {currentYear} Inverbally
+                        </small>
+                      </li>
+                    </ul>{" "}
+                  </div>
+                </div>
+                <div class="o-footer-split-primary">
+                  <a href="https://www.--foundation.org/">
+                    <img
+                      src="/yellowonBlack.png"
+                      alt="Logo"
+                      style={{
+                        height: "1.6625rem",
+                        width: "auto",
+                        marginRight: "1.0rem",
+                      }}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </footer>
+  );
+};
+
+export default AppFooter;
