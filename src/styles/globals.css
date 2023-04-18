@@ -5060,10 +5060,16 @@ a.c-hdgSans {
   font-weight: 600;
 }
 .c-hdgSans > a {
-  color: #000 !important;
-  text-decoration: none;
+color: #000 !important;
+text-decoration: none;
   word-break: break-word;
 }
+.c-hdgSans2 > a {
+  color: #fff !important;
+  text-decoration: none;
+    word-break: break-word;
+  }
+  
 .mix-c-hdg_inverted > a {
   color: #fff;
 }
@@ -5159,6 +5165,7 @@ a.c-hdgSerif {
 }
 .c-hdgSerif_3 > a {
   text-decoration: none;
+  color: #000;
 }
 .c-hdgSerif_4 {
   font-size: 0.9375rem;
@@ -5797,6 +5804,27 @@ a.c-pill:hover {
   margin-bottom: 5px;
 }
 
+.contentBlock{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+
+}.contentBlock-item{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+
+}
 .appbar::after {
   content: "";
   display: block;
@@ -7352,12 +7380,48 @@ a.c-txt_tag {
   font-size: 0.875rem;
   line-height: 1.231;
 }
+.c-txt_catMeta1,
+.c-txt_catMeta2,
+.c-txt_catMeta3,
+.c-txt_catMeta4,
 .c-txt_catMeta,
 .c-txt_poetMeta {
   font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
-.c-txt_catMeta {
+.c-txt_catMeta1 {
+  color: #ff4800;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.68px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.c-txt_catMeta2 {
+  color: #8707ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.68px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.c-txt_catMeta3 {
+  color: #ff0707;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.68px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.c-txt_catMeta4 {
   color: #ffc107;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.68px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.c-txt_catMeta {
+  color: #0b2ea2;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1.68px;
@@ -7405,7 +7469,7 @@ a.c-txt_tag {
   font-weight: 600;
 }
 .c-txt_herald {
-  color: #ffc107;
+  color: #ff076a;
   font-family: Lato, Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
@@ -7762,6 +7826,10 @@ a .mix-txt_brand_pure {
   .c-txt_callout {
     font-size: 1.875rem;
   }
+  .c-txt_catMeta1,
+.c-txt_catMeta2,
+.c-txt_catMeta3,
+.c-txt_catMeta4,
   .c-txt_catMeta {
     font-size: 0.875rem;
   }
@@ -8333,6 +8401,11 @@ c-vignette-cta {
 .c-vList > * + * {
   margin-top: 10px;
 }
+.c-vList-noPadding{
+  padding:0px;
+  list-style-type: none;
+}
+
 .c-vList_close > * + * {
   margin-top: 6px;
 }
@@ -8747,6 +8820,10 @@ c-vignette-cta {
     padding: 15px 0;
     border-bottom: 4px solid #e2e2e2;
   }
+  .c-txt_catMeta1,
+.c-txt_catMeta2,
+.c-txt_catMeta3,
+.c-txt_catMeta4,
   .c-txt_catMeta {
     font-size: 0.875rem;
   }

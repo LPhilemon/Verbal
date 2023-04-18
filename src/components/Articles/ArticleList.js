@@ -7,7 +7,7 @@ const ArticleList = ({ articles }) => {
   }
 
   return (
-    <ul style={{ listStyleType: 'none' }}>
+    <ul className="contentBlock" style={{ listStyleType: 'none' }}>
   {articles.map((article) => (
     <li key={article.id}>
       <ArticleListItem article={article} />

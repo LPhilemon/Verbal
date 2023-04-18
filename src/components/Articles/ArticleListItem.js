@@ -8,8 +8,8 @@ const ArticleListItem = ({ article }) => {
 
   return (
     
-        <article>
-
+    <article >
+    
 
 
 <div className={styles["c-tier-label"]}>

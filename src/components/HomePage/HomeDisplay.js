@@ -4,9 +4,9 @@ import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
 
 const HomeDisplay = ({ articles }) => {
-    if (!articles || articles.length === 0) {
-      return <div>No articles available.</div>;
-    }
+   // if (!articles || articles.length === 0) {
+    //  return <div>No articles available.</div>;
+   // }
   
     return (
 //       <ul style={{ listStyleType: 'none' }}>
@@ -23,108 +23,9 @@ const HomeDisplay = ({ articles }) => {
 <div class="o-wrapper">
             <div class="c-tier c-mix-tier_distant">
         <div class="o-grid o-grid_flexy o-grid_flexy_nonsequential">
-                                    <div class="o-grid-col o-grid-col_9of12">
-                        
-<ul class="contentBlock">
-                            <li class="contentBlock-item">
-            
-
-                
-                        
-        
-                                            
-        
-        
-                                                                                                                                                                                                                                                                                                                                            
-                                
-                                            
-
-    
-
-                                                    
-                    
-
-                    
-                
-                        
-            
-        
-    
-
-
-                                    
-                                            
-                            
-        
-
-        
-                
-
-
-
-
-
-
-
-
-
-
-<div class="c-hero c-hero_flexy mix-hero_offsetForce">
-<div class="c-hero-mantle">
-    <div class="c-feature">
-                            <div class="c-feature-preamble c-feature-preamble_proximate">
-                <span class="c-txt c-txt_catMeta c-txt_catMeta_illuminated">Prose from <i>Poetry</i> Magazine</span>
-            </div>
-        
-                            <div class="c-feature-hd c-feature-hd_distant">
-                <h2 class="c-hdgSans c-hdgSans_1 mix-c-hdg_inverted"><a href="https://www.inverbreplae.org/poetrymagazine/articles/160085/eleven-legends">Eleven Legends</a>
-                                            </h2>
-            </div>
-        
-                        
-                                            <div class="c-feature-sub c-feature-sub_distant">
-                <span class="c-txt c-txt_attribution c-mix-txt_inverted">                                
-        
-By The Editors
-
-        </span>
-            </div>
-        
-                            <div class="c-feature-abstract">
-                <div class="c-txt_abstract c-mix-txt_inverted"><p>Tributes to the winners of the 2022 Ruth Lilly Poetry Prize.</p></div>
-            </div>
-                    </div>
-                    {/* <!-- end .feature --> */}
-</div>
-            <div class="c-hero-media c-hero-media_primary c-hero-media_secondary@small">
-                            <a href="https://www.inverbreplae.org/poetrymagazine/articles/160085/eleven-legends" aria-hidden="true" tabindex="-1">
-                            <img
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            sizes="(max-width: 667px) 100vw, (max-width: 1170px) calc(100vw - (15px * 2) - (22.478632478vw - 2.564102564vw)), 870px"
-            srcset="https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=750&amp;h=&amp;fit=max&amp;key=2&amp;sig=a960f61369f8ba179b0ca417c83a5f4f3eff2951a2d71e627fa5d6c84418a75b&amp;750 750w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=870&amp;h=&amp;fit=max&amp;key=2&amp;sig=5c857f6c200fdeafb42a9c41efc3bd939e0ee8e0d9a5326cf25887efa7dbfde2&amp;870 870w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1096&amp;h=&amp;fit=max&amp;key=2&amp;sig=7b26fa25af1633ee4582ab74ab8ed2794e21f6b16811d740c1651eab44a7899e&amp;1096 1096w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1478&amp;h=&amp;fit=max&amp;key=2&amp;sig=8eeff7f8f737c68d02fdcbb98ac47c21c3a6259d16c8df9b1ecc903aa95590ab&amp;1478 1478w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1740&amp;h=&amp;fit=max&amp;key=2&amp;sig=ed98ddde94b2d75e958fecfd89c8ccf6c5ca8ff3a077113cd647fcd95908dae0&amp;1740 1740w"
-            alt="A composite of eleven black-and-white headshots of the 11 Ruth Lilly Prize winners, all against a blue background."
-            class=""
-            
-        />
-                            </a>
-                    </div>
-    </div>
-    {/* <!-- end .hero --> */}
-
-
-
-
-                
-
-        
-            
-
-        </li>
-                </ul>
-
-                </div>
+                                  
                                                         <div class="o-grid-col o-grid-col_aspectMatch o-mix-grid_col_primary@small o-grid-col_3of12">
-                    <ul class="c-vList c-vList_bordered">
+                    <ul class="c-vList-noPadding c-vList c-vList_bordered">
                                     
     
         
@@ -161,7 +62,7 @@ By The Editors
 <li>
 <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
-            <span class="c-txt c-txt_catMeta">Poem of the Day</span>
+            <span class="c-txt c-txt_catMeta1">Poem of the Day</span>
         </div>
     
                     <div class="c-feature-hd">
@@ -231,7 +132,7 @@ By Haki R. Madhubuti
 <li>
 <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
-            <span class="c-txt c-txt_catMeta">Essay</span>
+            <span class="c-txt c-txt_catMeta2">Essay</span>
         </div>
     
                     <div class="c-feature-hd">
@@ -302,7 +203,7 @@ By Eric Sneathen
 <li>
 <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
-            <span class="c-txt c-txt_catMeta">Featured Blogger</span>
+            <span class="c-txt c-txt_catMeta3">Featured Blogger</span>
         </div>
     
                     <div class="c-feature-hd">
@@ -404,6 +305,106 @@ By Robert Eric Shoemaker
                     </ul>
                 </div>
                             </div>
+  <div class="o-grid-col o-grid-col_9of12">
+                        
+<ul class="contentBlock">
+                            <li class="contentBlock-item">
+            
+
+                
+                        
+        
+                                            
+        
+        
+                                                                                                                                                                                                                                                                                                                                            
+                                
+                                            
+
+    
+
+                                                    
+                    
+
+                    
+                
+                        
+            
+        
+    
+
+
+                                    
+                                            
+                            
+        
+
+        
+                
+
+
+
+
+
+
+
+
+
+
+<div class="c-hero c-hero_flexy mix-hero_offsetForce">
+<div class="c-hero-mantle">
+    <div class="c-feature">
+                            <div class="c-feature-preamble c-feature-preamble_proximate">
+                <span class="c-txt c-txt_catMeta c-txt_catMeta_illuminated">Prose from <i>Poetry</i> Magazine</span>
+            </div>
+        
+                            <div class="c-feature-hd c-feature-hd_distant">
+                <h2 class="c-hdgSans2 c-hdgSans_1 mix-c-hdg_inverted"><a href="https://www.inverbreplae.org/poetrymagazine/articles/160085/eleven-legends">Eleven Legends</a>
+                                            </h2>
+            </div>
+        
+                        
+                                            <div class="c-feature-sub c-feature-sub_distant">
+                <span class="c-txt c-txt_attribution c-mix-txt_inverted">                                
+        
+By The Editors
+
+        </span>
+            </div>
+        
+                            <div class="c-feature-abstract">
+                <div class="c-txt_abstract c-mix-txt_inverted"><p>Tributes to the winners of the 2022 Ruth Lilly Poetry Prize.</p></div>
+            </div>
+                    </div>
+                    {/* <!-- end .feature --> */}
+</div>
+            <div class="c-hero-media c-hero-media_primary c-hero-media_secondary@small">
+                            <a href="https://www.inverbreplae.org/poetrymagazine/articles/160085/eleven-legends" aria-hidden="true" tabindex="-1">
+                            <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            sizes="(max-width: 667px) 100vw, (max-width: 1170px) calc(100vw - (15px * 2) - (22.478632478vw - 2.564102564vw)), 870px"
+            srcset="https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=750&amp;h=&amp;fit=max&amp;key=2&amp;sig=a960f61369f8ba179b0ca417c83a5f4f3eff2951a2d71e627fa5d6c84418a75b&amp;750 750w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=870&amp;h=&amp;fit=max&amp;key=2&amp;sig=5c857f6c200fdeafb42a9c41efc3bd939e0ee8e0d9a5326cf25887efa7dbfde2&amp;870 870w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1096&amp;h=&amp;fit=max&amp;key=2&amp;sig=7b26fa25af1633ee4582ab74ab8ed2794e21f6b16811d740c1651eab44a7899e&amp;1096 1096w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1478&amp;h=&amp;fit=max&amp;key=2&amp;sig=8eeff7f8f737c68d02fdcbb98ac47c21c3a6259d16c8df9b1ecc903aa95590ab&amp;1478 1478w, https://media.inverbreplae.org/uploads/media/default/0001/27/4d4335e813837df825635f99ee5cae6745d93fde.jpg?w=1740&amp;h=&amp;fit=max&amp;key=2&amp;sig=ed98ddde94b2d75e958fecfd89c8ccf6c5ca8ff3a077113cd647fcd95908dae0&amp;1740 1740w"
+            alt="A composite of eleven black-and-white headshots of the 11 Ruth Lilly Prize winners, all against a blue background."
+            class=""
+            
+        />
+                            </a>
+                    </div>
+    </div>
+    {/* <!-- end .hero --> */}
+
+
+
+
+                
+
+        
+            
+
+        </li>
+                </ul>
+
+                </div>
     </div>
 
 
@@ -748,28 +749,6 @@ By Kweku Abimbola
                                                                         
 
 
-<div class="o-vr o-vr_6x">
-<div class="c-tier c-tier_minimal">
-                                <a href="https://w1.buysub.com/pubs/P3/PET/sub_digital.jsp?cds_page_id=268200&amp;cds_mag_code=PET&amp;id=1679428564828&amp;lsid=30801455448010397&amp;vid=2&amp;cds_response_key=L23NPMHP" target="_blank">    <picture>
-<source
-    srcset="https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_1170xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png 1170w, https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_1334xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png 1334w, https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_1476xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png 1476w, https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_1988xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png 1988w, https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_2340xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png 2340w"
-    media="(min-width: 376px)"
-    sizes="
-        (max-width: 1170px) calc(100vw - (15px * 2)),
-        1170px
-    "
-/>
-<img
-    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-    srcset="https://s3.us-east-2.amazonaws.com/poetry-tpf-production/uploads/contentImages/_750xAUTO_fit_top-center_none/Mag-NPM-2023-Homepage-Banner-2340x376px.png"
-    alt=""
-    class=""
-    
-/>
-</picture>
-</a>
-            </div>
-</div>
 
 
                                                                                                 
