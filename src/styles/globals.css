@@ -2037,7 +2037,7 @@ a:hover > .icon_navAction {
     display: block;
     height: 0;
     max-width: 210px;
-    padding-top: 156px;
+    padding-top: 0px;
   }
   .o-grid-col_curatedOffset {
     padding-top: 37px;
@@ -2077,7 +2077,7 @@ a:hover > .icon_navAction {
 }
 @media only screen and (min-width: 668px) and (max-width: 940px) {
   .o-grid-col_aspectMatch:before {
-    padding-top: 64%;
+    padding-top: 0%;
   }
 }
 .o-inputShell {
@@ -2428,11 +2428,11 @@ a:hover > .icon_navAction {
 }
 .o-site-bd {
   flex: 1 0 auto;
-  padding-top: 72px;
+  padding-top: 0px;
   position: relative;
 }
 .o-site-bd_flush {
-  padding-top: 52px;
+  padding-top: 0px;
 }
 .o-site_standalone {
   display: block;
@@ -2449,10 +2449,10 @@ a:hover > .icon_navAction {
 }
 @media only screen and (min-width: 668px) {
   .o-site-bd {
-    padding-top: 179px;
+    padding-top: 0px;
   }
   .o-site-bd_flush_inner {
-    padding-top: 161px;
+    padding-top: 0px;
   }
 }
 .o-stereo {
@@ -8760,7 +8760,7 @@ c-vignette-cta {
     font-size: 0.875rem;
   }
   .o-site-bd {
-    padding-top: 50px;
+    padding-top: 0px;
   }
   .o-grid_flexy_ctr {
     text-align: left;

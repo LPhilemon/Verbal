@@ -3,21 +3,23 @@ import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
 import { Container, Box, Typography } from "@material-ui/core";
 
-const ArticleListItem = ({ article }) => {
+const NoImageArticleListItem = ({ article }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = article;
 
   return (
     
         <article>
 
-
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet"/>
 
 <div className={styles["c-tier-label"]}>
-<span class="c-txt c-txt_herald">Inverbally</span>
+<span class="c-txt c-txt_herald"></span>
 </div>
 <div className={styles["c-feature"]}>
-<div className={styles["c-feature-media"]}>
-<Link href={`/articles/${slug}`}>
+{/* <div className={styles["c-feature-media"]}>
+<Box ><Link href={`/articles/${slug}`}>
 {imageURL && (
   <img
     className={styles["responsive-image"]}
@@ -25,8 +27,8 @@ const ArticleListItem = ({ article }) => {
     alt={title}
   />
 )}
-</Link>
-</div>
+</Link></Box>
+</div> */}
 
 <div className={styles["c-feature-preamble"]}>
 <span className={`${styles["c-txt"]} ${styles["c-txt_catMeta"]}`}>
@@ -55,7 +57,8 @@ const ArticleListItem = ({ article }) => {
 
 </article>
       
+    
   );
 };
 
-export default ArticleListItem;
+export default NoImageArticleListItem;

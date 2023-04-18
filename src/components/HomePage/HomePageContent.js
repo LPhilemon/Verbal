@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { db } from "../../firebase/clientApp";
 import ArticleList from "../articles/ArticleList";
+import HomeDisplay from "./HomeDisplay";
 
 const HomePageContent = () => {
   const [loading, setLoading] = useState(false);
@@ -11,7 +12,7 @@ const HomePageContent = () => {
     setLoading(true);
     db.collection("articles")
       .orderBy("publishedAt", "desc")
-      .limit(5)
+      .limit(4)
       .get()
       .then((querySnapshot) => {
         const data = querySnapshot.docs.map((doc) => {
@@ -40,6 +41,7 @@ const HomePageContent = () => {
   return (
     <div>
       <ArticleList articles={articleData} />
+     
     </div>
   );
 };

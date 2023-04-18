@@ -42,18 +42,13 @@ const HomeIndexPage = () => {
 
 	return (
 		<div>
-		<Box>
-			<Container maxWidth = "md">
-					<Box sx={{mx: 2}}>
+		
 					<Home articles={articleData} />
 			<Link href="/articles">
 				View articles
 			</Link>
 			<AddArticle />
 
-					</Box>
-			</Container>
-		</Box>
 			
 
 		</div>

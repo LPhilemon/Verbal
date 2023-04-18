@@ -786,7 +786,7 @@ const AppBarComponent: React.FC = () => {
           </Drawer>
         </nav>
       )}
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <Box sx={{ my: 4 }}>
           <Typography variant="h2" component="h1" gutterBottom>
             Welcome to Your Website
@@ -813,7 +813,7 @@ const AppBarComponent: React.FC = () => {
             </Link>
           </Box>
         </Box>
-      </Container>
+      </Container> */}
     </Box>
   );
 };
