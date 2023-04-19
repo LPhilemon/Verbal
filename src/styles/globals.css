@@ -32,6 +32,39 @@
   height: auto;
 }
 
+/* General styles for the image */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom styles for different screen sizes */
+@media (max-width: 567px) {
+  .img-responsive {
+    width: calc(100vw - (15px * 2));
+  }
+}
+
+@media (min-width: 568px) and (max-width: 768px) {
+  .img-responsive {
+    width: calc((100vw - (15px * 2) - 90px) / 2);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  .img-responsive {
+    width: calc((100vw - (15px * 2) - 150px) / 3);
+  }
+}
+
+@media (min-width: 1171px) {
+  .img-responsive {
+    width: 340px;
+  }
+}
+
+
 /* styles/global.css */
 .cormorant-garamond {
   font-family: "EB Garamond", serif;
@@ -8400,12 +8433,16 @@ c-vignette-cta {
 }
 .c-vList > * + * {
   margin-top: 10px;
+  list-style-type: none;
 }
 .c-vList-noPadding{
   padding:0px;
   list-style-type: none;
 }
-
+.noPadding-noListStyle{
+  padding:0px;
+  list-style-type: none;
+}
 .c-vList_close > * + * {
   margin-top: 6px;
 }
