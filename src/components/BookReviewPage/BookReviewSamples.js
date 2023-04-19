@@ -19,7 +19,7 @@ const BookReviewSamples = ({ articles }) => {
             <ul class="noPadding-noListStyle o-sectionList">
               <li>
                 <ul class="noPadding-noListStyle o-graphBlocks o-graphBlocks_2up@xsmall o-graphBlocks_3up@medium">
-                  {articles.map((article, index) => (
+                  {articles.slice(1,4).map((article, index) => (
                     <BookReviewPreview key={index} article={article} />
                   ))}
                 </ul>

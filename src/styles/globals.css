@@ -935,6 +935,12 @@
   width: 100%;
   padding-top: 144.4444444444%;
 }
+.o-card-media_bookAspect_img{
+  height: 100%;
+  
+  top: 0;
+  width: 100%;
+}
 .o-card-media_bookAspect > img {
   height: 100%;
   left: 0;
@@ -1173,7 +1179,7 @@
   display: block;
   margin-bottom: 14px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #dadada78;
 }
 .o-form-item + .o-form-item,
 legend + .o-form-item {
@@ -7787,7 +7793,7 @@ a.c-txt_tag {
   color: #da1218;
 }
 .mix-txt_brand_pure {
-  -webkit-text-stroke: 0.1px #0e0c0c; /* 2px stroke width, red color */
+  -webkit-text-stroke: 0.5px #0e0c0c; /* 2px stroke width, red color */
   color: #ffc107;
 }
 a .mix-txt_brand_pure {

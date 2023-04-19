@@ -15,7 +15,7 @@ const HomeIndexPage = () => {
 	useEffect(() => {
 		setLoading(true);
 		const articlesCollection = collection(db, "articles");
-		const articlesQuery = query(articlesCollection, limit(3));
+		const articlesQuery = query(articlesCollection, limit(4));
 		getDocs(articlesQuery)
 			.then((querySnapshot) => {
 				const data = querySnapshot.docs.map((doc) => {

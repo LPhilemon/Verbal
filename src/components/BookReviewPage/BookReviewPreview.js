@@ -8,10 +8,12 @@ const BookReviewPreview = ({ article }) => {
     return (
       <li>
         <div class="o-card o-card_stretch">
+        
           <Link href={`/articles/${slug}`}>
             {imageURL && (
               <img
                 className={styles["img-responsive"]}
+                class="img-responsive o-card-media_bookAspect_img"
                 src={imageURL}
                 alt={title}
               />

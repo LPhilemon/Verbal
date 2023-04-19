@@ -597,15 +597,15 @@ const AppBarComponent: React.FC = () => {
                   }}
                 />
                 <span className="c-txt c-txt_tag mix-txt_brand mix-txt_brand_pure">
-                  <span style={{ color: "#ffc030" }}>I</span>
+                  <span style={{ color: "#dadaff" }}>I</span>
                   <span style={{ color: "#000" }}>n</span>
-                  <span style={{ color: "#ffc030" }}>v</span>
+                  <span style={{ color: "#dadada78" }}>v</span>
                   <span style={{ color: "#000" }}>e</span>
-                  <span style={{ color: "#ffc030" }}>r</span>
+                  <span style={{ color: "#dadada78" }}>r</span>
                   <span style={{ color: "#000" }}>b</span>
-                  <span style={{ color: "#ffc030" }}>a</span>
+                  <span style={{ color: "#dadada78" }}>a</span>
                   <span style={{ color: "#000" }}>l</span>
-                  <span style={{ color: "#ffc030" }}>l</span>
+                  <span style={{ color: "#dadada78" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
 
 
@@ -641,15 +641,15 @@ const AppBarComponent: React.FC = () => {
                   }}
                 />
                 <span className="c-txt c-txt_tag mix-txt_brand mix-txt_brand_pure">
-                  <span style={{ color: "#ffc030" }}>I</span>
+                  <span style={{ color: "#dadada78" }}>I</span>
                   <span style={{ color: "#000" }}>n</span>
-                  <span style={{ color: "#ffc030" }}>v</span>
+                  <span style={{ color: "#dadada78" }}>v</span>
                   <span style={{ color: "#000" }}>e</span>
-                  <span style={{ color: "#ffc030" }}>r</span>
+                  <span style={{ color: "#dadada78" }}>r</span>
                   <span style={{ color: "#000" }}>b</span>
-                  <span style={{ color: "#ffc030" }}>a</span>
+                  <span style={{ color: "#dadada78" }}>a</span>
                   <span style={{ color: "#000" }}>l</span>
-                  <span style={{ color: "#ffc030" }}>l</span>
+                  <span style={{ color: "#dadada78" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
 
 
