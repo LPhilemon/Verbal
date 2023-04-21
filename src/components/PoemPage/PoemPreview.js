@@ -13,6 +13,8 @@ const PoemPreview = ({ article }) => {
                   <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
                       <span class="c-txt c-txt_catMeta1">Poem</span>
+
+                      
                     </div>
 
                     <div class="c-feature-hd">
@@ -20,7 +22,13 @@ const PoemPreview = ({ article }) => {
                       <Link href={`/articles/${slug}`}>{title}</Link>
                       </h2>
                     </div>
-
+                     
+                    
+                    <div>
+<p className="cormorant-garamond">{excerpt.split(" ")
+  .slice(0, 27)
+  .join(" ") }</p>
+</div>
                     <div class="c-feature-sub">
                       <span class="c-txt c-txt_attribution">
                         By {author}

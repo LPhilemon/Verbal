@@ -14,7 +14,7 @@ const EssayPreview = ({ article }) => {
                     <div class="c-feature-preamble">
                       <span class="c-txt c-txt_catMeta2">Essay</span>
                     </div>
-                    <Link href={`/articles/${slug}`}>
+                    {/* <Link href={`/articles/${slug}`}>
             {imageURL && (
               <img
                 className={styles["img-responsive"]}
@@ -23,13 +23,17 @@ const EssayPreview = ({ article }) => {
                 alt={title}
               />
             )}
-          </Link>
+          </Link> */}
                     <div class="c-feature-hd">
                       <h2 class="c-hdgSerif c-hdgSerif_3">
                       <Link href={`/articles/${slug}`}>{title}</Link>
                       </h2>
                     </div>
-
+                    <div>
+<p className="cormorant-garamond">{excerpt.split(" ")
+  .slice(0, 27)
+  .join(" ") }</p>
+</div>
                     <div class="c-feature-sub">
                       <span class="c-txt c-txt_attribution">
                         By {author}

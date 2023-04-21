@@ -21,7 +21,11 @@ const BookReviewPreviewNoImage = ({ article }) => {
                       <Link href={`/articles/${slug}`}>{title}</Link>
                       </h2>
                     </div>
-
+                    <div>
+<p className="cormorant-garamond">{excerpt.split(" ")
+  .slice(0, 27)
+  .join(" ") }</p>
+</div>
                     <div class="c-feature-sub">
                       <span class="c-txt c-txt_attribution">
                         By {author}

@@ -5,6 +5,7 @@ import styles from "../../styles/ArticleListItem.module.css";
 import BookReviewSamples from "../BookReviewPage/BookReviewSamples";
 import RandomizedSideView from "./RandomizedSideView";
 import LeaderImageHome from "./LeaderImageHome";
+
 const HomeDisplay = ({ articles }) => {
   // if (!articles || articles.length === 0) {
   //  return <div>No articles available.</div>;

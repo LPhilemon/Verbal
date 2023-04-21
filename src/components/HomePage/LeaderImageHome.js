@@ -6,7 +6,7 @@ import styles from "../../styles/ArticleListItem.module.css";
 const LeaderImageHome = ({ articles }) => {
   return (
     <>
-      {articles.slice(3, 4).map((article, index) => {
+      {articles.slice(2, 3).map((article, index) => {
         const { title, author, publishedAt, excerpt, slug, imageURL } = article;
         return (
           <ul class="contentBlock" key={index}>
