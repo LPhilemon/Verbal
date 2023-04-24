@@ -58,9 +58,9 @@ const ArticlePageContent = () => {
                     <div class="o-titleBar-hd">
                         <h1 class="c-hdgSerif c-hdgSerif_1 c-mix-hdgSerif_lowProfile"> {title}</h1>
                     </div>
-                    {/* <!-- <div class="o-titleBar-summary o-titleBar-summary_constrained">
+                    <div class="o-titleBar-summary o-titleBar-summary_constrained">
                         <span class="c-hdgSans c-hdgSans_7">Clare Bucknell&rsquo;s<em> The Treasuries</em> examines how poetry anthologies have shaped national identity&mdash;and preserved some poems better left forgotten.</span>
-                    </div> --> */}
+                    </div> 
                     <div class="o-titleBar-meta">
                         <div>
                                                 <span class="c-txt c-txt_attribution">
