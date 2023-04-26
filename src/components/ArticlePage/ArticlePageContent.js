@@ -47,6 +47,8 @@ const ArticlePageContent = () => {
   const { title, author, publishedAt, content, imageURL } = articleData;
 
   return (
+    <div class="o-wrapper">
+    <div class="c-tier c-mix-tier_offsetAsymmetricalShort">
     <article class="o-article">
     <div class="o-article-hd">
         <div class="o-grid o-grid_flexy o-grid_flexy_ctr">
@@ -159,9 +161,12 @@ const ArticlePageContent = () => {
                 <div class="o-mediaEnclosure">
                     {imageURL && (
                         <img
-                          className="responsive-image"
+                          className="article-responsive-img"
                           src={imageURL}
                           alt={title}
+                          style={{  display: "block",
+  marginBottom: "24px"
+}}
                         />
                       )}
                 </div>
@@ -289,6 +294,8 @@ const ArticlePageContent = () => {
 
     </div>
 </article>
+</div>
+</div>
   );
 };
 

@@ -26,9 +26,28 @@
 
 @import url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
 
+.article-responsive-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ 
+
+
+@media (max-width: 667px)  {
+  .article-responsive-img{
+    width: calc(100vw - (15px * 2));
+  }
+}
+
+@media (max-width: 1170px) and (max-width: 970px) {
+  .article-responsive-img{
+    width: calc(100vw - (15px * 2) - 16.6015625vw);
+  }
+}
 
 .responsive-image {
-  width: 20%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -8040,7 +8059,7 @@ a .mix-txt_brand_pure {
   color: inherit;
   font-family: inherit;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
@@ -8924,8 +8943,18 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	font-family: "EB Garamond",adobe-garamond-pro,Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  font-size: 1rem;
+  line-height: 1.545454545;
+  text-rendering: optimizeLegibility;
+
+
 }
+
+@media only screen and (min-width: 668px) {
+body {
+    font-size: 1.275rem;
+}}
 ol, ul {
 	list-style: none;
 }
