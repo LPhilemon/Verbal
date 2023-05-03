@@ -5,7 +5,7 @@ import Image from "next/image";
 const AppFooter = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="appfooter">
+    <footer class="appfooter">
       {/* <footer className={styles.footer}> */}
       {/* Add your footer content here */}
       <div class="o-site-ft">

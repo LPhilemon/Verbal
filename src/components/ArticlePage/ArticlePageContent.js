@@ -67,10 +67,10 @@ const ArticlePageContent = () => {
                         <div>
                                                 <span class="c-txt c-txt_attribution">
                                                     By <a href="#">{author}</a>
+                                                <>
+                                                    Written On: {publishedAt}</>
                                                 </span>
-                                                <span class="c-txt c-txt_attribution">
-                                                    Written On: {publishedAt}
-                                                </span>
+                                              
                         </div>
 
 
