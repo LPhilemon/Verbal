@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'adobe-garamond-pro';
+  src: url('/fonts/adobe-garamond-pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
     font-family: 'EB Garamond';
     src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');

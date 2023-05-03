@@ -10,7 +10,7 @@ import AppFooter from '@/components/AppFooter/AppFooterComponent';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-    
+    <title>Inverbally</title>
       <AppBarComponent />
       
         
