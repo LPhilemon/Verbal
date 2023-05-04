@@ -2,10 +2,9 @@ import { collection, query, limit, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../firebase/clientApp";
 import Home from "../components/Home";
-import AddArticle from "../components/AddArticle";
+import AddArticle from "../components/Articles/AddArticle";
 import Link from "next/link";
-import { Container,Box,Typography } from "@material-ui/core";
-import styles from "../styles/ArticleListItem.module.css";
+
 const HomeIndexPage = () => {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
@@ -48,6 +47,7 @@ const HomeIndexPage = () => {
 				View articles
 			</Link>
 			<AddArticle />
+			<AddPoem />
 
 			
 
