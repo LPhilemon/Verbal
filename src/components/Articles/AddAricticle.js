@@ -4,7 +4,7 @@ import { addDoc, collection, query, where, getDocs, limit } from "firebase/fires
 import { db, storage } from "../../firebase/clientApp";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
-const ArticleForm = () => {
+const AddArticle = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [content, setContent] = useState("");
@@ -176,5 +176,5 @@ const ArticleForm = () => {
   );
 };
 
-export default ArticleForm;
+export default AddArticle;
 
