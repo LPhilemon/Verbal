@@ -11,8 +11,6 @@
 } */
 
 
-Gibson-Regular.ttf
-
 @font-face {
   font-family: 'adobe-garamond-pro';
   src: url('/fonts/adobe-garamond-pro.ttf') format('truetype');
@@ -29,7 +27,14 @@ Gibson-Regular.ttf
 
 @font-face {
   font-family: "Lato";
-  src: url('fonts/Gibson-Regular.ttf') format('truetype');
+  src: url('/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "canada-type-gibson";
+  src: url('/fonts/canada-type-gibson.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -8388,6 +8393,9 @@ a .mix-txt_brand_pure {
   .c-userContent td {
     padding: 22px;
   }
+  .c-userContent span {
+    font-size: 1.175rem;
+  }
 }
 .c-validationList {
   display: none;
@@ -8949,12 +8957,14 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -8972,7 +8982,7 @@ body {
 
 @media only screen and (min-width: 668px) {
 body {
-    font-size: 1.0rem;
+    font-size: 1.15rem;
 }}
 ol, ul {
 	list-style: none;
@@ -8989,3 +8999,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+html{overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}

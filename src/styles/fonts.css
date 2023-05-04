@@ -20,3 +20,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "canada-type-gibson";
+    src: url('/fonts/canada-type-gibson.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
