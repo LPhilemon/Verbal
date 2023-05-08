@@ -2,8 +2,7 @@
 import { collection, query, orderBy, getDocs } from "firebase/firestore";
 import { db } from "../../../firebase/clientApp";
 import PoemList from "../../components/Poems/PoemList";
-import styles from "../../styles/PoemListItem.module.css";
-
+import styles from "../../styles/ArticleListItem.module.css";
 export async function getServerSideProps() {
   const poemsRef = collection(db, "poems");
   const q = query(poemsRef, orderBy("publishedAt", "desc"));

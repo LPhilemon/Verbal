@@ -1,7 +1,7 @@
 
-import poemListItem from "./poemListItem";
+import PoemListItem from "./PoemListItem";
 
-const poemList = ({ poems }) => {
+const PoemList = ({ poems }) => {
   if (!poems || poems.length === 0) {
     return <div>No poems available.</div>;
   }
@@ -10,7 +10,7 @@ const poemList = ({ poems }) => {
     <ul className="contentBlock" style={{ listStyleType: 'none' }}>
   {poems.map((poem) => (
     <li key={poem.id}>
-      <poemListItem poem={poem} />
+      <PoemListItem poem={poem} />
     </li>
   ))}
 </ul>
@@ -18,5 +18,5 @@ const poemList = ({ poems }) => {
   );
 };
 
-export default poemList;
+export default PoemList;
 

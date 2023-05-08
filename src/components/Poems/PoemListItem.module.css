@@ -1,0 +1,38 @@
+
+/* styles/ArticleListItem.module.css */
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .authorDate {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  .img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .excerpt {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  

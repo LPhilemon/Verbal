@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "../../styles/ArticleListItem.module.css";
 import EssayPreview from "../EssayPage/EssayPreview";
 import BookReviewPreviewNoImage from "../BookReviewPage/BookReviewPreviewNoImage";
 import PoemPreview from "../PoemPage/PoemPreview";

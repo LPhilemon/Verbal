@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { db } from "../../firebase/clientApp";
 import Home from "../components/Home";
 import AddArticle from "../components/Articles/AddArticle";
+import AddPoem from "../components/Poems/AddPoem";
 import Link from "next/link";
 
 const HomeIndexPage = () => {

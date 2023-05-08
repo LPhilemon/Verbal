@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { addDoc, collection, query, where, getDocs, limit } from "firebase/firestore";
-import { db, storage } from "../../firebase/clientApp";
+import { db, storage } from "../../../firebase/clientApp";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const AddPoem = () => {

@@ -9,7 +9,7 @@ const PoemPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const [poemData, setArticleData] = useState(null);
+  const [poemData, setPoemData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -24,9 +24,9 @@ const PoemPage = () => {
         if (!querySnapshot.empty) {
           const doc = querySnapshot.docs[0];
           const data = { id: doc.id, ...doc.data() };
-          setArticleData(data);
+          setPoemData(data);
         } else {
-          setError('Article not found');
+          setError('Poem not found');
         }
         setLoading(false);
       })
