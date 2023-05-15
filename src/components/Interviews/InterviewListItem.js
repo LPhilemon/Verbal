@@ -3,8 +3,8 @@ import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
 import { Container, Box, Typography } from "@material-ui/core";
 
-const EssayListItem = ({ essay }) => {
-  const { title, author, publishedAt, excerpt, slug, imageURL } = essay;
+const InterviewListItem = ({ interview }) => {
+  const { title, author, publishedAt, excerpt, slug, imageURL } = interview;
 
   return (
     
@@ -17,7 +17,7 @@ const EssayListItem = ({ essay }) => {
 </div>
 <div className={styles["c-feature"]}>
 <div className={styles["c-feature-media"]}>
-<Link href={`/essays/${slug}`}>
+<Link href={`/interviews/${slug}`}>
 {imageURL && (
   <img
     className={styles["responsive-image"]}
@@ -25,12 +25,25 @@ const EssayListItem = ({ essay }) => {
     alt={title}
   />
 )}
+<div class="o-mediaEnclosure">
+                  {imageURL && (
+                    <img
+                      className="article-responsive-img"
+                      src={imageURL}
+                      alt={title}
+                      style={{
+                        display: "block",
+                        marginBottom: "24px"
+                      }}
+                    />
+                  )}
+                </div>
 </Link>
 </div>
 
 <div className={styles["c-feature-preamble"]}>
 <span className={`${styles["c-txt"]} ${styles["c-txt_catMeta"]}`}>
-  Essay
+  Interview
 </span>
 </div>
 
@@ -38,7 +51,7 @@ const EssayListItem = ({ essay }) => {
 <h2
   className={`${styles["c-hdgSans"]} ${styles["c-hdgSans_5"]} ${styles["c-hdgSans_4@sm"]}`}
 >
-  <Link href={`/essays/${slug}`}>{title}</Link>
+  <Link href={`/interviews/${slug}`}>{title}</Link>
 </h2>
 </div>
 
@@ -58,4 +71,4 @@ const EssayListItem = ({ essay }) => {
   );
 };
 
-export default EssayListItem;
+export default InterviewListItem;

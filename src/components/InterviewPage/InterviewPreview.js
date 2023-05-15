@@ -3,7 +3,7 @@ import NoImageArticleListItem from "../Articles/NoImageArticleListItem";
 import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
 
-const ShortStoryPreview = ({ article }) => {
+const InterviewPreview = ({ article }) => {
     const { title, author, publishedAt, excerpt, slug, imageURL } = article;
     return (
       
@@ -12,7 +12,7 @@ const ShortStoryPreview = ({ article }) => {
         <li>
                   <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
-                      <span class="c-txt c-txt_catMeta1">ShortStory</span>
+                      <span class="c-txt c-txt_catMeta1">Interview</span>
 
                       
                     </div>
@@ -43,4 +43,4 @@ const ShortStoryPreview = ({ article }) => {
     );
   };
   
-  export default ShortStoryPreview;
+  export default InterviewPreview;

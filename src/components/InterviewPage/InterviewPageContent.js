@@ -4,26 +4,26 @@ import { useRouter } from "next/router";
 import { db } from "../../../firebase/clientApp";
 import { collection, query, orderBy, limitToLast, getDocs, where } from "firebase/firestore";
 import sanitizeHtml from 'sanitize-html';
-// import styles from "../../styles/BookReviewListItem.module.css";
+// import styles from "../../styles/InterviewListItem.module.css";
 
-const BookReviewPageContent = () => {
+const InterviewPageContent = () => {
   const router = useRouter();
   const { slug } = router.query;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [bookreviewData, setBookReviewData] = useState(null);
+  const [interviewData, setInterviewData] = useState(null);
 
   useEffect(() => {
     setLoading(true);
-    const bookreviewsRef = collection(db, "bookreviews");
-    const q = query(bookreviewsRef, where("slug", "==", slug), orderBy("publishedAt", "desc"), limitToLast(1));
+    const interviewsRef = collection(db, "interviews");
+    const q = query(interviewsRef, where("slug", "==", slug), orderBy("publishedAt", "desc"), limitToLast(1));
     getDocs(q)
       .then((querySnapshot) => {
         if (querySnapshot.empty) {
-          setError("BookReview not found");
+          setError("Interview not found");
         } else {
           const data = querySnapshot.docs[0].data();
-          setBookReviewData(data);
+          setInterviewData(data);
         }
         setLoading(false);
       })
@@ -34,18 +34,18 @@ const BookReviewPageContent = () => {
   }, [slug]);
 
   if (loading) {
-    return <div>Loading bookreview content...</div>;
+    return <div>Loading interview content...</div>;
   }
 
   if (error) {
     return <div>Error: {error}</div>;
   }
 
-  if (!bookreviewData) {
-    return <div>BookReview not found</div>;
+  if (!interviewData) {
+    return <div>Interview not found</div>;
   }
 
-  const { title, author, publishedAt, content, imageURL } = bookreviewData;
+  const { title, author, publishedAt, content, imageURL } = interviewData;
 
   const sanitizedContent = sanitizeHtml(content);
 
@@ -58,13 +58,13 @@ const BookReviewPageContent = () => {
               <div class="o-grid-col o-grid-col_9of12 o-mix-grid-col_offset1of12">
                 <div class="o-titleBar">
                   <div class="o-titleBar-preamble">
-                    <span class="c-txt c-txt_catMeta">BookReview</span>
+                    <span class="c-txt c-txt_catMeta">Interview</span>
                   </div>
                   <div class="o-titleBar-hd">
                     <h1 class="c-hdgSerif c-hdgSerif_1 c-mix-hdgSerif_lowProfile"> {title}</h1>
                   </div>
                   <div class="o-titleBar-summary o-titleBar-summary_constrained">
-                    <span class="c-hdgSans c-hdgSans_7">Clare Bucknell&rsquo;s<em> The Treasuries</em> examines how poetry anthologies have shaped national identity&mdash;and preserved some bookreviews better left forgotten.</span>
+                    <span class="c-hdgSans c-hdgSans_7">Clare Bucknell&rsquo;s<em> The Treasuries</em> examines how poetry anthologies have shaped national identity&mdash;and preserved some interviews better left forgotten.</span>
                   </div>
                   <div class="o-titleBar-meta">
                     <div>
@@ -270,7 +270,7 @@ const BookReviewPageContent = () => {
                             <div class="c-feature c-mix-feature_shrinkwrap">
                               <div class="c-feature-preamble">
                                 <span
-                                  class="c-txt c-txt_attribution">Related BookReviews</span>
+                                  class="c-txt c-txt_attribution">Related Interviews</span>
                                 <ul>
                                   <li>
                                     <a href="https://www.invise.org/poetrymagazine/articles/60488/no-antonin-artaud-with-the-flapjacks-please" class="c-hdgSans c-hdgSans_5">
@@ -307,5 +307,5 @@ const BookReviewPageContent = () => {
   );
 };
 
-export default BookReviewPageContent;
+export default InterviewPageContent;
 

@@ -4,6 +4,12 @@ import { db } from "../../firebase/clientApp";
 import Home from "../components/Home";
 import AddArticle from "../components/Articles/AddArticle";
 import AddPoem from "../components/Poems/AddPoem";
+import AddBookReview from "../components/BookReview/AddBookReview";
+import AddAppReview from "../components/AppReview/AddAppReview";
+import AddEssay from "../components/Essay/AddEssay";
+import AddInterview from "../components/Interviews/AddInterview";
+import AddShortStory from "../components/ShortStory/AddShortStory";
+
 import Link from "next/link";
 
 const HomeIndexPage = () => {
@@ -49,6 +55,14 @@ const HomeIndexPage = () => {
 			</Link>
 			<AddArticle />
 			<AddPoem />
+			<AddBookReview />
+			<AddAppReview />
+			<AddEssay />
+			
+			<AddInterview />
+
+			<br></br>
+			<AddShortStory />
 
 			
 

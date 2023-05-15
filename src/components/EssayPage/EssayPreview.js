@@ -12,23 +12,18 @@ const EssayPreview = ({ article }) => {
         <li>
                   <div class="c-feature c-mix-feature_shrinkwrap">
                     <div class="c-feature-preamble">
-                      <span class="c-txt c-txt_catMeta2">Essay</span>
+                      <span class="c-txt c-txt_catMeta1">Essay</span>
+
+                      
                     </div>
-                    {/* <Link href={`/articles/${slug}`}>
-            {imageURL && (
-              <img
-                className={styles["img-responsive"]}
-                class="img-responsive o-card-media_bookAspect_img"
-                src={imageURL}
-                alt={title}
-              />
-            )}
-          </Link> */}
+
                     <div class="c-feature-hd">
                       <h2 class="c-hdgSerif c-hdgSerif_3">
                       <Link href={`/articles/${slug}`}>{title}</Link>
                       </h2>
                     </div>
+                     
+                    
                     <div>
 <p className="cormorant-garamond">{excerpt.split(" ")
   .slice(0, 27)

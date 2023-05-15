@@ -1,23 +1,25 @@
-// components/ArticleListItem.js
+// components/ShortStoryListItem.js
 import Link from "next/link";
-import styles from "../../styles/ArticleListItem.module.css";
+import styles from "../../styles/ShortStoryListItem.module.css";
 import { Container, Box, Typography } from "@material-ui/core";
 
-const EssayListItem = ({ essay }) => {
-  const { title, author, publishedAt, excerpt, slug, imageURL } = essay;
+const NoImageShortStoryListItem = ({ shortstory }) => {
+  const { title, author, publishedAt, excerpt, slug, imageURL } = shortstory;
 
   return (
     
-    <article >
-    
+        <article>
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet"/>
 
 <div className={styles["c-tier-label"]}>
-<span class="c-txt c-txt_herald">Inverbally</span>
+<span class="c-txt c-txt_herald"></span>
 </div>
 <div className={styles["c-feature"]}>
-<div className={styles["c-feature-media"]}>
-<Link href={`/essays/${slug}`}>
+{/* <div className={styles["c-feature-media"]}>
+<Box ><Link href={`/shortstorys/${slug}`}>
 {imageURL && (
   <img
     className={styles["responsive-image"]}
@@ -25,12 +27,12 @@ const EssayListItem = ({ essay }) => {
     alt={title}
   />
 )}
-</Link>
-</div>
+</Link></Box>
+</div> */}
 
 <div className={styles["c-feature-preamble"]}>
 <span className={`${styles["c-txt"]} ${styles["c-txt_catMeta"]}`}>
-  Essay
+  ShortStory
 </span>
 </div>
 
@@ -38,7 +40,7 @@ const EssayListItem = ({ essay }) => {
 <h2
   className={`${styles["c-hdgSans"]} ${styles["c-hdgSans_5"]} ${styles["c-hdgSans_4@sm"]}`}
 >
-  <Link href={`/essays/${slug}`}>{title}</Link>
+  <Link href={`/shortstorys/${slug}`}>{title}</Link>
 </h2>
 </div>
 
@@ -55,7 +57,8 @@ const EssayListItem = ({ essay }) => {
 
 </article>
       
+    
   );
 };
 
-export default EssayListItem;
+export default NoImageShortStoryListItem;

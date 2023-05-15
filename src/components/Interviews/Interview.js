@@ -1,26 +1,31 @@
 
 import Link from "next/link";
 
-const Essay = ({ title, author, publishedAt, excerpt, slug, imageURL }) => {
+const Interview = ({ title, author, publishedAt, excerpt, slug, imageURL }) => {
   return (
     <article>
       <header>
         <h2>
-          <Link href={`/essays/${slug}`}>
+          <Link href={`/interviews/${slug}`}>
             <a>{title}</a>
           </Link>
         </h2>
         <p>
           by {author} on {publishedAt}
         </p>
+        <div class="article-responsive-img">
         {imageURL && <img src={imageURL} alt={title} />}
+        </div>
+       
+       
+
       </header>
-      <div>
+      <div >
         <p>{excerpt}</p>
       </div>
     </article>
   );
 };
 
-export default Essay;
+export default Interview;
 
