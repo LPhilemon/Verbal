@@ -48,7 +48,7 @@ const AppBarComponent: React.FC = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && 'contains' in menuRef.current && !menuRef.current.contains(event.target as Node)) {
+    if (menuRef.current && (menuRef.current as HTMLDivElement).contains(event.target as Node)) {
       setActiveMenu('');
     }
   };
@@ -82,8 +82,8 @@ const AppBarComponent: React.FC = () => {
   // const handleMenuClose = () => {
   //   setAnchorEl(null);
   // };
-  const handleMenuClose = (event: MouseEvent) => {
-    event.currentTarget.blur();
+  const handleMenuClose = (event: React.FocusEvent<HTMLElement>) => {
+    (event.currentTarget as HTMLElement).blur();
     handleClickOutside;
   };
 
@@ -469,7 +469,7 @@ const AppBarComponent: React.FC = () => {
                 <ul className={`c-primaryNav desktop-nav`} ref={menuRef}>
                   <li
                     onClick={(e) => handleMenuOpen(e, "poemsMenu")}
-                    onBlur={(e) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                   >
                     <a href="#">POEMS</a>
                     <ul
@@ -482,7 +482,7 @@ const AppBarComponent: React.FC = () => {
                   </li>
                   <li
                     onClick={(e) => handleMenuOpen(e, "authorsMenu")}
-                    onBlur={(e) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                   >
                     <a href="#">AUTHORS</a>
                     <ul
@@ -494,7 +494,7 @@ const AppBarComponent: React.FC = () => {
                     </ul>
                   </li>
                   {/* <li onClick={(e) => handleMenuOpen(e, "genresMenu")}
-                            onBlur={(e) => handleMenuClose(e)} // Add this line
+                            onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                             >
                               <a href="#">GENRES</a>
                               <ul
@@ -508,7 +508,7 @@ const AppBarComponent: React.FC = () => {
                             </li> */}
                   <li
                     onClick={(e) => handleMenuOpen(e, "jumbledMenu")}
-                    onBlur={(e) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                   >
                     <a href="#">JUMBLED</a>
                     <ul
@@ -521,7 +521,7 @@ const AppBarComponent: React.FC = () => {
                   </li>
                   <li
                     onClick={(e) => handleMenuOpen(e, "bookReviewsMenu")}
-                    onBlur={(e) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                   >
                     <a href="#">BOOK REVIEWS</a>
                     <ul
@@ -536,7 +536,7 @@ const AppBarComponent: React.FC = () => {
                   </li>
                   <li
                     onClick={(e) => handleMenuOpen(e, "magazinesMenu")}
-                    onBlur={(e) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
                   >
                     <a href="#">
                       <i>Inverbally</i>{" "}
