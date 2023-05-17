@@ -13,7 +13,10 @@ import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
-import { MouseEvent } from 'react';
+
+import { MouseEvent} from 'react';
+
+const menuRef = useRef<HTMLDivElement | null>(null);
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -44,19 +47,25 @@ const AppBarComponent: React.FC = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setActiveMenu("");
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && 'contains' in menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setActiveMenu('');
     }
   };
-  const [openMagazines, setOpenMagazines] = React.useState(false);
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  // const handleClickOutside = (event: MouseEvent) => {
+  //   if (menuRef.current && !menuRef.current.contains(event.target)) {
+  //     setActiveMenu("");
+  //   }
+  // };
+  // const [openMagazines, setOpenMagazines] = React.useState(false);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
   // const handleDrawerToggle = () => {
   //   setMobileOpen(!mobileOpen);
@@ -87,31 +96,31 @@ const AppBarComponent: React.FC = () => {
   };
 
 
-  const handleClicker = (item) => {
-    if (expanded === item) {
-      setExpanded("");
-    } else {
-      setExpanded(item);
-    }
-  };
-  const isExpanded = (item) => expanded === item;
-  const closeButton = (
-    <IconButton
-      edge="start"
-      color="inherit"
-      aria-label="menu"
-      onClick={handleDrawerToggle} // Add onClick handler here
-      sx={{
-        position: "absolute",
-        right: "8px",
-        top: "8px",
-        color: "#000", // Change the color to black
-        fontSize: "3rem", // Add fontSize here
-      }}
-    >
-      <CloseIcon />
-    </IconButton>
-  );
+  // const handleClicker = (item) => {
+  //   if (expanded === item) {
+  //     setExpanded("");
+  //   } else {
+  //     setExpanded(item);
+  //   }
+  // };
+  // const isExpanded = (item) => expanded === item;
+  // const closeButton = (
+  //   <IconButton
+  //     edge="start"
+  //     color="inherit"
+  //     aria-label="menu"
+  //     onClick={handleDrawerToggle} // Add onClick handler here
+  //     sx={{
+  //       position: "absolute",
+  //       right: "8px",
+  //       top: "8px",
+  //       color: "#000", // Change the color to black
+  //       fontSize: "3rem", // Add fontSize here
+  //     }}
+  //   >
+  //     <CloseIcon />
+  //   </IconButton>
+  // );
 
   // mobile handlers
 
