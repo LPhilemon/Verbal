@@ -13,6 +13,7 @@ import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
+import { MouseEvent } from 'react';
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -32,7 +33,7 @@ const AppBarComponent: React.FC = () => {
   const [openBookReviews, setOpenBookReviews] = React.useState(false);
   const [expanded, setExpanded] = useState('')
   
-  const handleMenuOpen = (event, menuId) => {
+  const handleMenuOpen = (event : MouseEvent, menuId: string) => {
     if (activeMenu === menuId) {
       setActiveMenu("");
     } else {
@@ -72,7 +73,7 @@ const AppBarComponent: React.FC = () => {
   // const handleMenuClose = () => {
   //   setAnchorEl(null);
   // };
-  const handleMenuClose = (event) => {
+  const handleMenuClose = (event: MouseEvent) => {
     event.currentTarget.blur();
     handleClickOutside;
   };
@@ -121,7 +122,7 @@ const AppBarComponent: React.FC = () => {
   const Drawer2 = () => {
     const [expandedItems, setExpandedItems] = useState([false, false, false, false, false]);
 
-    const toggleSublist = (index) => {
+    const toggleSublist = (index: number) => {
       const newExpandedItems = [...expandedItems];
       newExpandedItems[index] = !newExpandedItems[index];
       setExpandedItems(newExpandedItems);
