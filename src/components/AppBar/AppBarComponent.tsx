@@ -399,15 +399,15 @@ const AppBarComponent: React.FC = () => {
                   }}
                 />
                 <span className="c-txt c-txt_tag mix-txt_brand mix-txt_brand_pure">
-                  <span style={{ color: "#dadaff" }}>I</span>
+                  <span style={{ color: "#ffc107" }}>I</span>
                   <span style={{ color: "#000" }}>n</span>
-                  <span style={{ color: "#dadada78" }}>v</span>
+                  <span style={{ color: "#ffc107" }}>v</span>
                   <span style={{ color: "#000" }}>e</span>
-                  <span style={{ color: "#dadada78" }}>r</span>
+                  <span style={{ color: "#ffc107" }}>r</span>
                   <span style={{ color: "#000" }}>b</span>
-                  <span style={{ color: "#dadada78" }}>a</span>
+                  <span style={{ color: "#ffc107" }}>a</span>
                   <span style={{ color: "#000" }}>l</span>
-                  <span style={{ color: "#dadada78" }}>l</span>
+                  <span style={{ color: "#ffc107" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
 
 
@@ -443,15 +443,15 @@ const AppBarComponent: React.FC = () => {
                   }}
                 />
                 <span className="c-txt c-txt_tag mix-txt_brand mix-txt_brand_pure">
-                  <span style={{ color: "#dadada78" }}>I</span>
+                  <span style={{ color: "#ffc107" }}>I</span>
                   <span style={{ color: "#000" }}>n</span>
-                  <span style={{ color: "#dadada78" }}>v</span>
+                  <span style={{ color: "#ffc107" }}>v</span>
                   <span style={{ color: "#000" }}>e</span>
-                  <span style={{ color: "#dadada78" }}>r</span>
+                  <span style={{ color: "#ffc107" }}>r</span>
                   <span style={{ color: "#000" }}>b</span>
-                  <span style={{ color: "#dadada78" }}>a</span>
+                  <span style={{ color: "#ffc107" }}>a</span>
                   <span style={{ color: "#000" }}>l</span>
-                  <span style={{ color: "#dadada78" }}>l</span>
+                  <span style={{ color: "#ffc107" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
 
 
@@ -550,6 +550,11 @@ const AppBarComponent: React.FC = () => {
                       )}
                     </a>
 
+
+<div>
+
+<p>Robyn Rihanna Fenty NH[2] (/riˈænə/ (listen) ree-AN-ə;[3][4][n 1] born February 20, 1988) is a Barbadian singer, actress, fashion designer, and businesswoman. Born in Saint Michael and raised in Bridgetown, Rihanna auditioned for American record producer Evan Rogers who invited her to the United States to record demo tapes.<br></br>   After signing with Def Jam in 2005, she soon gained recognition with the release of her first two studio albums, Music of the Sun (2005) and A Girl Like Me (2006), both of which were influenced by Caribbean music and peaked within the top ten of the US Billboard 200 chart.<br></br>   <strong><cite>Rihanna's third album, Good Girl Gone Bad (2007), incorporated elements of dance-pop and established her status as a major icon in the music industry.</cite></strong> <blockquote> The chart-topping single "Umbrella" earned Rihanna her first Grammy Award and catapulted her to global stardom. She continued to mix pop, dance, and R&B genres on her next studio albums, Rated R (2009), Loud (2010), Talk That Talk (2011), and Unapologetic (2012), the last of which became her first Billboard 200 number one.</blockquote><br></br>   The albums spawned a string of chart-topping singles, including "Rude Boy", "Only Girl (In the World)", "What's My Name?", "S&M", "We Found Love", and "Diamonds". Her eighth album, Anti (2016), showcased a new creative control following her departure from Def Jam. It became her second US number one album and featured the chart-topping single "Work". During her musical career, Rihanna has collaborated with many artists, such as Drake, Eminem, Jay-Z, Kanye West, Ne-Yo, and Shakira.</p>
+</div>
                     <ul
                       className={
                         activeMenu === "magazinesMenu" ? "isActive" : ""
@@ -563,7 +568,7 @@ const AppBarComponent: React.FC = () => {
                     </ul>
                   </li>
                 </ul>
-              </div>
+              </div>f
             </div>
           )}
         </Toolbar>
