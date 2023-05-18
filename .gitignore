@@ -33,8 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-./firebase
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
@@ -81,7 +79,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-firebase/
+
 # TypeScript v1 declaration files
 typings/
 
@@ -145,4 +143,3 @@ dist
 .tern-port
 >>>>>>> 0fc8653daeff3be3a1c2245461a938c23ca1db5e
 
-firebase/clientApp.js
