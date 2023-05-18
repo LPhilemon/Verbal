@@ -28,6 +28,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env.local
 
 # vercel
 .vercel
@@ -144,4 +145,4 @@ dist
 .tern-port
 >>>>>>> 0fc8653daeff3be3a1c2245461a938c23ca1db5e
 
-firebase/clientApp.jsclientApp.js
+firebase/clientApp.js

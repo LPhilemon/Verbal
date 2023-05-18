@@ -14,8 +14,16 @@ import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
 
 import { MouseEvent} from 'react';
+ const menuRef = useRef(null);
 
-const menuRefs = useRef<HTMLDivElement>();
+ let menuRefs: React.MutableRefObject<HTMLDivElement | null> | undefined;
+
+  if (typeof window !== 'undefined') {
+    menuRefs = useRef<HTMLDivElement | null>(null);
+  }
+
+
+
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -28,12 +36,12 @@ const AppBarComponent: React.FC = () => {
   );
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
-  const menuRef = useRef(null);
-  const [openMagazines2, setOpenMagazines2] = React.useState(false);
-  const [openAuthors, setOpenAuthors] = React.useState(false);
-  const [openJumbled, setOpenJumbled] = React.useState(false);
-  const [openBookReviews, setOpenBookReviews] = React.useState(false);
-  const [expanded, setExpanded] = useState('')
+
+  // const [openMagazines2, setOpenMagazines2] = React.useState(false);
+  // const [openAuthors, setOpenAuthors] = React.useState(false);
+  // const [openJumbled, setOpenJumbled] = React.useState(false);
+  // const [openBookReviews, setOpenBookReviews] = React.useState(false);
+  // const [expanded, setExpanded] = useState('')
   
   const handleMenuOpen = (event : MouseEvent, menuId: string) => {
     if (activeMenu === menuId) {
@@ -47,11 +55,11 @@ const AppBarComponent: React.FC = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (menuRefs.current !== null) {
-    if (menuRefs.current && (menuRefs.current as HTMLDivElement).contains(event.target as Node)) {
+    
+    if (menuRefs?.current && (menuRefs.current as HTMLDivElement).contains(event.target as Node)) {
       setActiveMenu('');
     }}
-  };
+  
 
   // const handleClickOutside = (event: MouseEvent) => {
   //   if (menuRef.current && !menuRef.current.contains(event.target)) {
