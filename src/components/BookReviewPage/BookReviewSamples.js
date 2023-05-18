@@ -1,5 +1,3 @@
-import ArticleListItem from "../articles/ArticleListItem";
-import NoImageArticleListItem from "../Articles/NoImageArticleListItem";
 import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
 import BookReviewPreview from "./BookReviewPreview";

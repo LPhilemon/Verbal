@@ -1,7 +1,7 @@
 // components/EssayListItem.js
 import Link from "next/link";
 import styles from "../../styles/EssayListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const NoImageEssayListItem = ({ essay }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = essay;

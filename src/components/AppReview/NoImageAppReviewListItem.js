@@ -1,7 +1,7 @@
 // components/AppReviewListItem.js
 import Link from "next/link";
 import styles from "../../styles/AppReviewListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const NoImageAppReviewListItem = ({ appreview}) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = AppReview;

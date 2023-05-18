@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { db } from "../../firebase/clientApp";
-import ArticleList from "../articles/ArticleList";
 import HomeDisplay from "./HomeDisplay";
 
 const HomePageContent = () => {

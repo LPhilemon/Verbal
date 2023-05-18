@@ -1,7 +1,7 @@
 // components/PoemListItem.js
 import Link from "next/link";
 import styles from "../../styles/PoemListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const NoImagePoemListItem = ({ poem }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = poem;

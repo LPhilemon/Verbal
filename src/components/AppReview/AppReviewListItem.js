@@ -1,7 +1,7 @@
-// components/ArticleListItem.js
+
 import Link from "next/link";
 import styles from "../../styles/ArticleListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const AppReviewListItem = ({ appreview }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = appreview;

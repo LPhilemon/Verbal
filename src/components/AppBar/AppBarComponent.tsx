@@ -9,14 +9,13 @@ import Drawer from "@mui/material/Drawer";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
+import { useTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
 
 import { MouseEvent} from 'react';
 
-const menuRef = useRef<HTMLDivElement | null>(null);
+const menuRefs = useRef<HTMLDivElement>();
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -48,9 +47,10 @@ const AppBarComponent: React.FC = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && (menuRef.current as HTMLDivElement).contains(event.target as Node)) {
+    if (menuRefs.current !== null) {
+    if (menuRefs.current && (menuRefs.current as HTMLDivElement).contains(event.target as Node)) {
       setActiveMenu('');
-    }
+    }}
   };
 
   // const handleClickOutside = (event: MouseEvent) => {

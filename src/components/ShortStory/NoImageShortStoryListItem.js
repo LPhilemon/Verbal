@@ -1,7 +1,7 @@
 // components/ShortStoryListItem.js
 import Link from "next/link";
 import styles from "../../styles/ShortStoryListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const NoImageShortStoryListItem = ({ shortstory }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = shortstory;

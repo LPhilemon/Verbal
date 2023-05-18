@@ -1,7 +1,7 @@
 // components/InterviewListItem.js
 import Link from "next/link";
 import styles from "../../styles/InterviewListItem.module.css";
-import { Container, Box, Typography } from "@material-ui/core";
+ 
 
 const NoImageInterviewListItem = ({ interview }) => {
   const { title, author, publishedAt, excerpt, slug, imageURL } = interview;
