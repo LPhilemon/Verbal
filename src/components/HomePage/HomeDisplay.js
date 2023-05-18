@@ -64,7 +64,7 @@ const HomeDisplay = ({ articles }) => {
                     <img
                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                       sizes="(max-width: 667px) 153px, (max-width: 1170px) calc(100vw - (15px * 2) - (2.564102564vw + 65.811965812vw)), 370px"
-                      srcset="https://media.inverbreplae.org/uploads/media/default/0001/27/763675b611e13417c9e34cdb49acbc698deb6121.jpg?w=153&amp;h=&amp;fit=max&amp;key=2&amp;sig=c829a355e477806e0da659bf3f5ecbbb40a5e842de769cc086ce3d5c6b8c2fbd&amp;153 153w, https://media.inverbreplae.org/uploads/media/default/0001/27/763675b611e13417c9e34cdb49acbc698deb6121.jpg?w=306&amp;h=&amp;fit=max&amp;key=2&amp;sig=e013cd765c37974e2f2f60f3eb0f7e5404313e8be81553b6add826f1cf3a5d98&amp;306 306w, https://media.inverbreplae.org/uploads/media/default/0001/27/763675b611e13417c9e34cdb49acbc698deb6121.jpg?w=370&amp;h=&amp;fit=max&amp;key=2&amp;sig=fd94bddb28a82bc4d70a7c586db1a09511b6655b30e4b5adb0de18fca438c7f9&amp;370 370w, https://media.inverbreplae.org/uploads/media/default/0001/27/763675b611e13417c9e34cdb49acbc698deb6121.jpg?w=740&amp;h=&amp;fit=max&amp;key=2&amp;sig=fa7ca827bb9519b16785f8afbb009ca64789db04ec9c7afcb5e9d758d2e73e13&amp;740 740w"
+                      srcset=""
                       alt=""
                       class="c-cover-art"
                     />
@@ -203,7 +203,7 @@ const HomeDisplay = ({ articles }) => {
                     <img
                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                       sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcset="https://media.inverbreplae.org/uploads/media/default/0001/26/b9c276afb28941aa9e1ad0118e3ee3a48653931e.jpg?w=255&amp;h=&amp;fit=max&amp;key=2&amp;sig=c658c05f67600f22c860f5ba7e4a6c5c50a3b5d080636a9a2464152b68875b35&amp;255 255w, https://media.inverbreplae.org/uploads/media/default/0001/26/b9c276afb28941aa9e1ad0118e3ee3a48653931e.jpg?w=294&amp;h=&amp;fit=max&amp;key=2&amp;sig=293e04bfdd555280d284a70d9e0761388be39bae55e51da9e376ed807754c6bd&amp;294 294w, https://media.inverbreplae.org/uploads/media/default/0001/26/b9c276afb28941aa9e1ad0118e3ee3a48653931e.jpg?w=422&amp;h=&amp;fit=max&amp;key=2&amp;sig=040b4e3a8612ab7c0ee31090ad46a589e63f638d8121be08ada671a40d89fbfe&amp;422 422w, https://media.inverbreplae.org/uploads/media/default/0001/26/b9c276afb28941aa9e1ad0118e3ee3a48653931e.jpg?w=510&amp;h=&amp;fit=max&amp;key=2&amp;sig=07c4079a31770a966d77d934bbc061815b4018970e2c6cb57d706e36dc729c35&amp;510 510w, https://media.inverbreplae.org/uploads/media/default/0001/26/b9c276afb28941aa9e1ad0118e3ee3a48653931e.jpg?w=586&amp;h=&amp;fit=max&amp;key=2&amp;sig=9c030e6c630f5d23cdd0578500821d97dc98d67515f360732dd2fc750d318833&amp;586 586w"
+                      srcset=""
                       alt=""
                       class="c-cover-art"
                     />
@@ -214,7 +214,7 @@ const HomeDisplay = ({ articles }) => {
                     <img
                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                       sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcset="https://media.inverbreplae.org/uploads/media/default/0001/26/c2dfe6a2cbe87a7e66e54877389cdb5377853789.jpg?w=255&amp;h=&amp;fit=max&amp;key=2&amp;sig=cdab7e07dcd98064c826275dbbae16374b403df54e00e5e44d70a072dda3de2f&amp;255 255w, https://media.inverbreplae.org/uploads/media/default/0001/26/c2dfe6a2cbe87a7e66e54877389cdb5377853789.jpg?w=294&amp;h=&amp;fit=max&amp;key=2&amp;sig=6a7ece7e27c3b544d23b7d64b9c331402c227d2f1818a7e72a102a71459cb1f5&amp;294 294w, https://media.inverbreplae.org/uploads/media/default/0001/26/c2dfe6a2cbe87a7e66e54877389cdb5377853789.jpg?w=422&amp;h=&amp;fit=max&amp;key=2&amp;sig=464b7c342fa3d54540f79fc8c0b11f33ecfe62b24df2c8f9a4bdd1d45f2ff6f4&amp;422 422w, https://media.inverbreplae.org/uploads/media/default/0001/26/c2dfe6a2cbe87a7e66e54877389cdb5377853789.jpg?w=510&amp;h=&amp;fit=max&amp;key=2&amp;sig=1e02fe2fa4d8506a63211d7cfc9406fc8fdb9302df8551e2d7b822468b9f7166&amp;510 510w, https://media.inverbreplae.org/uploads/media/default/0001/26/c2dfe6a2cbe87a7e66e54877389cdb5377853789.jpg?w=586&amp;h=&amp;fit=max&amp;key=2&amp;sig=dd5376ed8b5146f7b01f102cf5b80092e67bda2b39621c8a75d116908edaa599&amp;586 586w"
+                      srcset=""
                       alt="cover of poetry with celestial looking pink pegasuses against a black starry background"
                       class="c-cover-art"
                     />
@@ -225,7 +225,7 @@ const HomeDisplay = ({ articles }) => {
                     <img
                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                       sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcset="https://media.inverbreplae.org/uploads/media/default/0001/26/7d734c28c75d38118102f3193042537b4d0dc60f.jpg?w=255&amp;h=&amp;fit=max&amp;key=2&amp;sig=113820c4f605b5d953bc874420bf0a42ae85c2c38040fb6934c6c78dab378cda&amp;255 255w, https://media.inverbreplae.org/uploads/media/default/0001/26/7d734c28c75d38118102f3193042537b4d0dc60f.jpg?w=294&amp;h=&amp;fit=max&amp;key=2&amp;sig=62ea96d6b5ca2d59884676bdac2f8dc330087b26afecc59fa3d9273907338542&amp;294 294w, https://media.inverbreplae.org/uploads/media/default/0001/26/7d734c28c75d38118102f3193042537b4d0dc60f.jpg?w=422&amp;h=&amp;fit=max&amp;key=2&amp;sig=c6f824f654a93feac8cf6a265a3c06afd14820ec0c29e1e674bf5b912eb233a4&amp;422 422w, https://media.inverbreplae.org/uploads/media/default/0001/26/7d734c28c75d38118102f3193042537b4d0dc60f.jpg?w=510&amp;h=&amp;fit=max&amp;key=2&amp;sig=0d266397843918b338af990538c00b1319f8f590f93beeaa8ca5e5a044010114&amp;510 510w, https://media.inverbreplae.org/uploads/media/default/0001/26/7d734c28c75d38118102f3193042537b4d0dc60f.jpg?w=586&amp;h=&amp;fit=max&amp;key=2&amp;sig=9cffc06aa82698632a9f61727ee64aa881d2fe83c7bd524b58c14c7cdd55e8a6&amp;586 586w"
+                      srcset=""
                       alt=""
                       class="c-cover-art"
                     />
@@ -236,7 +236,7 @@ const HomeDisplay = ({ articles }) => {
                     <img
                       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                       sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcset="https://media.inverbreplae.org/uploads/media/default/0001/26/20b15d35112b0ce903181cda9b62b98f20141e4f.jpg?w=255&amp;h=&amp;fit=max&amp;key=2&amp;sig=2a52face33860ec45188522a24bf56d30d61a8f3f06bd77db1c0135da84e7f4a&amp;255 255w, https://media.inverbreplae.org/uploads/media/default/0001/26/20b15d35112b0ce903181cda9b62b98f20141e4f.jpg?w=294&amp;h=&amp;fit=max&amp;key=2&amp;sig=c7f4ef0e3a520ccd2651d8e8e294cc5e3bc0dafdd0f7d331dff0173343bb9def&amp;294 294w, https://media.inverbreplae.org/uploads/media/default/0001/26/20b15d35112b0ce903181cda9b62b98f20141e4f.jpg?w=422&amp;h=&amp;fit=max&amp;key=2&amp;sig=88a18f51743d3c2ce9c650e7ff22a80367040a192548cad6b2820dc35a4d68cb&amp;422 422w, https://media.inverbreplae.org/uploads/media/default/0001/26/20b15d35112b0ce903181cda9b62b98f20141e4f.jpg?w=510&amp;h=&amp;fit=max&amp;key=2&amp;sig=df3a3c4bc97408b4f2ca6358c1fe3fd01ccbe1f8d8c227aab8fa966493e7c6f3&amp;510 510w, https://media.inverbreplae.org/uploads/media/default/0001/26/20b15d35112b0ce903181cda9b62b98f20141e4f.jpg?w=586&amp;h=&amp;fit=max&amp;key=2&amp;sig=d5b871d853737a2508851cc597d29c4846923e9abcdb7d7130c04732696042b5&amp;586 586w"
+                      srcset=""
                       alt=""
                       class="c-cover-art"
                     />
@@ -354,7 +354,7 @@ const HomeDisplay = ({ articles }) => {
                         <img
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           sizes="(max-width: 667px) calc(100vw - (15px * 2)), (max-width: 1170px) calc((100vw - (15px * 2) - 30px) / 2), 575px"
-                          srcset="https://media.inverbreplae.org/uploads/media/default/0001/25/9418fef0156e42593ad60d545eddd91125a8bb91.png?w=575&amp;h=&amp;fit=max&amp;key=2&amp;sig=ced24276430da1d9e73a3f5f42419c277fc6adc5da36788637bd1eae90d194a1&amp;575 575w, https://media.inverbreplae.org/uploads/media/default/0001/25/9418fef0156e42593ad60d545eddd91125a8bb91.png?w=708&amp;h=&amp;fit=max&amp;key=2&amp;sig=dbbcb12580784434d8391fed38e4a49cf849be95ae39154e0cde9c143dc7ad00&amp;708 708w, https://media.inverbreplae.org/uploads/media/default/0001/25/9418fef0156e42593ad60d545eddd91125a8bb91.png?w=964&amp;h=&amp;fit=max&amp;key=2&amp;sig=ab837154f4f24b7535237ec0bec68078c4cac2b97522c0ad394d56c0f1263f76&amp;964 964w, https://media.inverbreplae.org/uploads/media/default/0001/25/9418fef0156e42593ad60d545eddd91125a8bb91.png?w=1150&amp;h=&amp;fit=max&amp;key=2&amp;sig=ecb7a0d8144d3e5892ef21fc36f426263d07f53f64a6452762034e5c2dad37c6&amp;1150 1150w, https://media.inverbreplae.org/uploads/media/default/0001/25/9418fef0156e42593ad60d545eddd91125a8bb91.png?w=1274&amp;h=&amp;fit=max&amp;key=2&amp;sig=6f3c741f0dbe2f203552b8aa7e994e37d77454bb3d77bbc257a51a5527e06bce&amp;1274 1274w"
+                          srcset=""
                           alt=""
                           class=""
                         />

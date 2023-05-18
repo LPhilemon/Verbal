@@ -341,7 +341,7 @@ const AppFooter = () => {
                 <div class="o-footer-split-primary">
                   <a href="https://www.--foundation.org/">
                     <img
-                      src="/yellowonBlack.png"
+                      src="/YellowonBlack.png"
                       alt="Logo"
                       style={{
                         height: "1.6625rem",
