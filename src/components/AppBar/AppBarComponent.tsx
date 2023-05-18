@@ -12,15 +12,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
-
+import dynamic from "next/dynamic";
 import { MouseEvent} from 'react';
- const menuRef = useRef(null);
 
- let menuRefs: React.MutableRefObject<HTMLDivElement | null> | undefined;
 
-  if (typeof window !== 'undefined') {
-    menuRefs = useRef<HTMLDivElement | null>(null);
-  }
+
 
 
 
@@ -42,6 +38,8 @@ const AppBarComponent: React.FC = () => {
   // const [openJumbled, setOpenJumbled] = React.useState(false);
   // const [openBookReviews, setOpenBookReviews] = React.useState(false);
   // const [expanded, setExpanded] = useState('')
+  const menuRef = useRef(null);
+  const menuRefs = useRef<HTMLDivElement>(null);
   
   const handleMenuOpen = (event : MouseEvent, menuId: string) => {
     if (activeMenu === menuId) {
