@@ -441,7 +441,7 @@ const AppBarComponent: React.FC = () => {
                 }}
               >
                 <img
-                  src="/yellowonBlack.png"
+                  src="/YellowonBlack.png"
                   alt="Logo"
                   style={{
                     height: "1.6625rem",
