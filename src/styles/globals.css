@@ -7883,7 +7883,7 @@ a.c-txt_tag {
   color: #da1218;
 }
 .mix-txt_brand_pure {
-  -webkit-text-stroke: 0.5px #0e0c0c; /* 2px stroke width, red color */
+  -webkit-text-stroke: 0.0001rem #525146; /* 2px stroke width, red color */
   color: #ffc107;
 }
 a .mix-txt_brand_pure {
