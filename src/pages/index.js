@@ -9,7 +9,7 @@ import AddAppReview from "../components/AppReview/AddAppReview";
 import AddEssay from "../components/Essay/AddEssay";
 import AddInterview from "../components/Interviews/AddInterview";
 import AddShortStory from "../components/ShortStory/AddShortStory";
-
+import Loading from "./Loading"
 import Link from "next/link";
 
 const HomeIndexPage = () => {
@@ -39,7 +39,7 @@ const HomeIndexPage = () => {
 			});
 	}, []);
 	if (loading) {
-		return <div>Loading...</div>;
+		return  <Loading />;
 	}
 
 	if (error) {
