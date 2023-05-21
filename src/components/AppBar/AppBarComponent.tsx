@@ -13,13 +13,7 @@ import { useTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
 import dynamic from "next/dynamic";
-import { MouseEvent} from 'react';
-
-
-
-
-
-
+import { MouseEvent } from "react";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -40,8 +34,8 @@ const AppBarComponent: React.FC = () => {
   // const [expanded, setExpanded] = useState('')
   const menuRef = useRef(null);
   const menuRefs = useRef<HTMLDivElement>(null);
-  
-  const handleMenuOpen = (event : MouseEvent, menuId: string) => {
+
+  const handleMenuOpen = (event: MouseEvent, menuId: string) => {
     if (activeMenu === menuId) {
       setActiveMenu("");
     } else {
@@ -53,11 +47,13 @@ const AppBarComponent: React.FC = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    
-    if (menuRefs?.current && (menuRefs.current as HTMLDivElement).contains(event.target as Node)) {
-      setActiveMenu('');
-    }}
-  
+    if (
+      menuRefs?.current &&
+      (menuRefs.current as HTMLDivElement).contains(event.target as Node)
+    ) {
+      setActiveMenu("");
+    }
+  };
 
   // const handleClickOutside = (event: MouseEvent) => {
   //   if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -101,7 +97,6 @@ const AppBarComponent: React.FC = () => {
     }
   };
 
-
   // const handleClicker = (item) => {
   //   if (expanded === item) {
   //     setExpanded("");
@@ -130,258 +125,291 @@ const AppBarComponent: React.FC = () => {
 
   // mobile handlers
 
-
-
-
-
   const Drawer2 = () => {
-    const [expandedItems, setExpandedItems] = useState([false, false, false, false, false]);
+    const [expandedItems, setExpandedItems] = useState([
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]);
 
     const toggleSublist = (index: number) => {
       const newExpandedItems = [...expandedItems];
       newExpandedItems[index] = !newExpandedItems[index];
       setExpandedItems(newExpandedItems);
     };
-    
-  
 
     return (
       <div className="drawer">
-
         <ul className="drawer-list">
+             {/* Articles ListItem */}
+             <li
+            className={`drawer-link${expandedItems[1] ? "expanded" : ""}`}
+            onClick={(e) => {
+              e.preventDefault();
+              toggleSublist(1);
+            }}
+          >
+            <div className="drawer-item">
+              <a href="#" className="drawer-link">
+                ARTICLES
+              </a>
+            </div>
+
+            <div className="divider"></div>
+            <div>
+              <ul
+                className={`sublist-item-style sublist${
+                  expandedItems[1] ? " expanded" : ""
+                }`}
+              >
+                <li className="sublist-item">
+                  <a href="/essays" className="sublist-link">
+                    Essays
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/short-stories" className="sublist-link">
+                    Short-Stories
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/book-reviews" className="sublist-link">
+                    Book-Reviews
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/interviews" className="sublist-link">
+                    Interviews
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/poems" className="sublist-link">
+                    Poems
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
           {/* AUTHORS ListItem */}
-          <li  className={`drawer-link${expandedItems[0] ? "expanded" : ""
-  }`} 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleSublist(0);
-              }}>
-                 <div className="drawer-item"> 
-                 <a
-              href="#"
-              className="drawer-link"
-              
-            >
-              AUTHORS
-            </a>
-</div>
-            
-            <div className="divider"></div>
-            
-          <div>
-          <ul className={`sublist-item-style sublist${expandedItems[0] ? " expanded" : ""}`}>
-              <li className="sublist-item">
-                <a href="/authors/" className="sublist-link">
-                  All Authors
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/authors/" className="sublist-link">
-                  Recent Aditions
-                </a>
-              </li>
-            </ul>
-          </div>
-          </li>
+          <li
+            className={`drawer-link${expandedItems[0] ? "expanded" : ""}`}
+            onClick={(e) => {
+              e.preventDefault();
+              toggleSublist(0);
+            }}
+          >
+            <div className="drawer-item">
+              <a href="#" className="drawer-link">
+                AUTHORS
+              </a>
+            </div>
 
-          {/* JUMBLED ListItem */}
-          <li  className={`drawer-link${expandedItems[1] ? "expanded" : ""
-  }`} 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleSublist(1);
-              }}>
-                <div className="drawer-item"> 
-                <a
-              href="#"
-              className="drawer-link"
-              
-            >
-              ARTICLES
-            </a>
-                </div>
-            
             <div className="divider"></div>
+
             <div>
-            <ul className={`sublist-item-style sublist${expandedItems[1] ? " expanded" : ""}`}>
-              <li className="sublist-item">
-                <a href="/poems" className="sublist-link">
-                  Poems
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/essays" className="sublist-link">
-                  Essays
-                </a>
-              </li>
-            </ul>
+              <ul
+                className={`sublist-item-style sublist${
+                  expandedItems[0] ? " expanded" : ""
+                }`}
+              >
+                <li className="sublist-item">
+                  <a href="/authors/" className="sublist-link">
+                    All Authors
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/authors/" className="sublist-link">
+                    Recent Aditions
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/authors/" className="sublist-link">
+                  Most Contributions
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
 
-          {/* BOOK REVIEWS ListItem */}
-          <li className={`drawer-link${expandedItems[2] ? "expanded" : ""
-  }`} 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleSublist(2);
-              }}>
-                <div className="drawer-item">
-                <a
-              href="#"
-              className="drawer-link"
-             
-            >
-              BOOK REVIEWS
-            </a>
-                </div>
-            
+       
+          {/*Essays ListItem */}
+          <li
+            className={`drawer-link${expandedItems[2] ? "expanded" : ""}`}
+            onClick={(e) => {
+              e.preventDefault();
+              toggleSublist(2);
+            }}
+          >
+            <div className="drawer-item">
+              <a href="#" className="drawer-link">
+               ESSAYS
+              </a>
+            </div>
+
             <div className="divider"></div>
             <div>
-            <ul className={`sublist-item-style sublist${expandedItems[2] ? " expanded" : ""}`}>
-              <li className="sublist-item">
-                <a href="/authors/some-link" className="sublist-link">
-                  Some Author
-                </a>
-              </li>
-            </ul>
+              <ul
+                className={`sublist-item-style sublist${
+                  expandedItems[2] ? " expanded" : ""
+                }`}
+              >
+                <li className="sublist-item">
+                  <a href="/essays" className="sublist-link">
+                   All Essays
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/essays" className="sublist-link">
+                  Top Essays
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/essays" className="sublist-link">
+                  Recent Releases
+                  </a>
+                </li>
+              </ul>
             </div>
-          
           </li>
 
           {/* MAGAZINES ListItem */}
-          <li className={`drawer-link${expandedItems[3] ? "expanded" : ""
-  }`} 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleSublist(3);
-              }}>
-                <div className="drawer-item ">
-                <a
-              href="#"
-              className="drawer-link"
-            
-            >
-              MAGAZINES
-            </a>
-                </div>
-           
+          <li
+            className={`drawer-link${expandedItems[3] ? "expanded" : ""}`}
+            onClick={(e) => {
+              e.preventDefault();
+              toggleSublist(3);
+            }}
+          >
+            <div className="drawer-item ">
+              <a href="#" className="drawer-link">
+               INVERRBALLY
+              </a>
+            </div>
+
             <div className="divider"></div>
             <div>
-            <ul className={`sublist-item-style sublist${expandedItems[3] ? " expanded" : ""}`}>
-              <li className="sublist-item">
-                <a href="/" className="sublist-link">
-                  Inverbally
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/" className="sublist-link">
-                  Other Genre
-                </a>
-              </li>
-            </ul>
+              <ul
+                className={`sublist-item-style sublist${
+                  expandedItems[3] ? " expanded" : ""
+                }`}
+              >
+                <li className="sublist-item">
+                  <a href="/" className="sublist-link">
+                    Inverbally
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/" className="sublist-link">
+                   Top Articles
+                  </a>
+                </li>
+              
+                <li className="sublist-item">
+                  <a href="/" className="sublist-link">
+                   Top Contributors
+                  </a>
+                </li>
+              </ul>
             </div>
-            
           </li>
           {/* About List Item */}
-          <li   className={`drawer-link${expandedItems[4] ? "expanded" : ""
-  }`} 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleSublist(4);
-              }}>
-           <div className="drawer-item ">
-           <a
-              href="#"
-              className={'drawer-link drawer-link${expandedItems[4] ? "expanded" : ""}'}
-              
-            >
-              ABOUT US
-            </a>
-           </div>
+          <li
+            className={`drawer-link${expandedItems[4] ? "expanded" : ""}`}
+            onClick={(e) => {
+              e.preventDefault();
+              toggleSublist(4);
+            }}
+          >
+            <div className="drawer-item ">
+              <a
+                href="#"
+                className={
+                  'drawer-link drawer-link${expandedItems[4] ? "expanded" : ""}'
+                }
+              >
+                ABOUT US
+              </a>
+            </div>
             <div className="divider"></div>
             <div>
-            <ul className={`sublist-item-style sublist${expandedItems[4] ? " expanded" : ""}`}>
-              <li className="sublist-item">
-                <a href="/authors/some-link" className="sublist-link">
-                  About Inverbally
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/genres/some-link" className="sublist-link">
-                  Our Vision
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/genres/some-link" className="sublist-link">
-                 Our Mission
-                </a>
-              </li>
-              <li className="sublist-item">
-                <a href="/genres/some-link" className="sublist-link">
-                Donate
-                </a>
-              </li>
-            </ul>
+              <ul
+                className={`sublist-item-style sublist${
+                  expandedItems[4] ? " expanded" : ""
+                }`}
+              >
+                <li className="sublist-item">
+                  <a href="/authors/some-link" className="sublist-link">
+                    About Inverbally
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/genres/some-link" className="sublist-link">
+                    Our Vision
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/genres/some-link" className="sublist-link">
+                    Our Mission
+                  </a>
+                </li>
+                <li className="sublist-item">
+                  <a href="/genres/some-link" className="sublist-link">
+                    Support Us
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
 
           {/* social Icons*/}
           <li>
-          <ul className="drawer-item-icons">
-                      <li  className="drawer-item-icons-element">
-                        <a
-                          href="https://twitter.com/inverbally"
-                          target="_blank"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            width="40"
-                            height="40"
-                          >
-                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li className="drawer-item-icons-element">
-                        <a
-                          href="https://www.facebook.com/inverbally"
-                          target="_blank"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            width="40"
-                            height="40"
-                          >
-                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li className="drawer-item-icons-element">
-                        <a
-                          href="https://www.instagram.com/inverbally/"
-                          target="_blank"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            width="40"
-                            height="40"
-                          >
-                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
+            <ul className="drawer-item-icons">
+              <li className="drawer-item-icons-element">
+                <a href="https://twitter.com/inverbally" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="40"
+                    height="40"
+                  >
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                  </svg>
+                </a>
+              </li>
+              <li className="drawer-item-icons-element">
+                <a href="https://www.facebook.com/inverbally" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="40"
+                    height="40"
+                  >
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                  </svg>
+                </a>
+              </li>
+              <li className="drawer-item-icons-element">
+                <a href="https://www.instagram.com/inverbally/" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="40"
+                    height="40"
+                  >
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
-
     );
   };
 
-  
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -441,8 +469,6 @@ const AppBarComponent: React.FC = () => {
                   <span style={{ color: "#000" }}>l</span>
                   <span style={{ color: "#FFC107" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
-
-
                 </span>
               </div>
             </Box>
@@ -485,8 +511,6 @@ const AppBarComponent: React.FC = () => {
                   <span style={{ color: "#000" }}>l</span>
                   <span style={{ color: "#FFC107" }}>l</span>
                   <span style={{ color: "#000" }}>y</span>
-
-
                 </span>
               </div>
               <div
@@ -499,28 +523,75 @@ const AppBarComponent: React.FC = () => {
               >
                 <ul className={`c-primaryNav desktop-nav`} ref={menuRef}>
                   <li
+                    onClick={(e) => handleMenuOpen(e, "articlesMenu")}
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) =>
+                      handleMenuClose(e)
+                    } // Add this line
+                  >
+                    <a href="#">ARTICLES</a>
+                    <ul
+                      className={
+                        activeMenu === "articlesMenu" ? "isActive" : ""
+                      }
+                    >
+                      <li>
+                        <a href="/essays">Essays</a>
+                      </li>
+                      <li>
+                        <a href="/short-stories">Short-Stories</a>
+                      </li>
+                      <li>
+                        <a href="/book-reviews">Book-Reviews</a>
+                      </li>
+
+                      <li>
+                        <a href="/Interviews">Interviews</a>
+                      </li>
+
+                      <li>
+                        <a href="/poems">Poems</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
                     onClick={(e) => handleMenuOpen(e, "poemsMenu")}
-                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) =>
+                      handleMenuClose(e)
+                    } // Add this line
                   >
                     <a href="#">POEMS</a>
                     <ul
                       className={activeMenu === "poemsMenu" ? "isActive" : ""}
                     >
                       <li>
-                        <a href="/poems/some-link">Some Poem</a>
+                        <a href="/poems/">All Poems</a>
+                      </li>
+                      <li>
+                        <a href="/poems">Poets</a>
+                      </li>
+                      <li>
+                        <a href="/poems">Recent Releases</a>
                       </li>
                     </ul>
                   </li>
                   <li
                     onClick={(e) => handleMenuOpen(e, "authorsMenu")}
-                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) =>
+                      handleMenuClose(e)
+                    } // Add this line
                   >
                     <a href="#">AUTHORS</a>
                     <ul
                       className={activeMenu === "authorsMenu" ? "isActive" : ""}
                     >
                       <li>
-                        <a href="/authors/some-link">Some Author</a>
+                        <a href="/authors">All Authors</a>
+                      </li>
+                      <li>
+                        <a href="/authors">Recent Additions</a>
+                      </li>
+                      <li>
+                        <a href="/authors">Most Contributions</a>
                       </li>
                     </ul>
                   </li>
@@ -537,37 +608,33 @@ const AppBarComponent: React.FC = () => {
                                 </li>
                               </ul>
                             </li> */}
+
                   <li
-                    onClick={(e) => handleMenuOpen(e, "jumbledMenu")}
-                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
+                    onClick={(e) => handleMenuOpen(e, "EssaysMenu")}
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) =>
+                      handleMenuClose(e)
+                    } // Add this line
                   >
-                    <a href="#">JUMBLED</a>
+                    <a href="#">Essays</a>
                     <ul
-                      className={activeMenu === "jumbledMenu" ? "isActive" : ""}
+                      className={activeMenu === "EssaysMenu" ? "isActive" : ""}
                     >
                       <li>
-                        <a href="/poems/some-link">Some Poem</a>
+                        <a href="/essays">All Essays</a>
                       </li>
-                    </ul>
-                  </li>
-                  <li
-                    onClick={(e) => handleMenuOpen(e, "bookReviewsMenu")}
-                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
-                  >
-                    <a href="#">BOOK REVIEWS</a>
-                    <ul
-                      className={
-                        activeMenu === "bookReviewsMenu" ? "isActive" : ""
-                      }
-                    >
                       <li>
-                        <a href="/authors/some-link">Some Author</a>
+                        <a href="/essays">Top Essays</a>
+                      </li>
+                      <li>
+                        <a href="/essays">Recent Releases</a>
                       </li>
                     </ul>
                   </li>
                   <li
                     onClick={(e) => handleMenuOpen(e, "magazinesMenu")}
-                    onBlur={(e: React.FocusEvent<HTMLLIElement>) => handleMenuClose(e)} // Add this line
+                    onBlur={(e: React.FocusEvent<HTMLLIElement>) =>
+                      handleMenuClose(e)
+                    } // Add this line
                   >
                     <a href="#">
                       <i>Inverbally</i>{" "}
@@ -588,9 +655,16 @@ const AppBarComponent: React.FC = () => {
                       }
                     >
                       <li>
-                        <a href="/genres/some-link">Some Genre</a>
-                        <br />
-                        <a href="/genres/some-link">Other Genre</a>
+                        <a href="/">Magazine</a>
+                      </li>{" "}
+                      <li>
+                        <a href="/">Top Articles</a>
+                      </li>
+                      <li>
+                        <a href="/">About Us</a>
+                      </li>
+                      <li>
+                        <a href="/">Sponsor Us</a>
                       </li>
                     </ul>
                   </li>
