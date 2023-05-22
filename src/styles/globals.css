@@ -8985,3 +8985,16 @@ c-vignette-cta {
   }
 }
 
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height to fill the viewport vertically */
+  background-color: #f8f8f8; /* Set a background color or use your desired styles */
+}
+
+.loading-container img {
+  max-width: 100%;
+  height: auto;
+  /* Add any additional styles to adjust the logo size, margins, etc. */
+}

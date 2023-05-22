@@ -171,8 +171,13 @@ const AppBarComponent: React.FC = () => {
           <div>
           <ul className={`sublist-item-style sublist${expandedItems[0] ? " expanded" : ""}`}>
               <li className="sublist-item">
-                <a href="/authors/some-link" className="sublist-link">
-                  Some Author
+                <a href="/authors/" className="sublist-link">
+                  All Authors
+                </a>
+              </li>
+              <li className="sublist-item">
+                <a href="/authors/" className="sublist-link">
+                  Recent Aditions
                 </a>
               </li>
             </ul>
@@ -192,7 +197,7 @@ const AppBarComponent: React.FC = () => {
               className="drawer-link"
               
             >
-              JUMBLED
+              ARTICLES
             </a>
                 </div>
             
@@ -200,8 +205,13 @@ const AppBarComponent: React.FC = () => {
             <div>
             <ul className={`sublist-item-style sublist${expandedItems[1] ? " expanded" : ""}`}>
               <li className="sublist-item">
-                <a href="/poems/some-link" className="sublist-link">
-                  Some Poem
+                <a href="/poems" className="sublist-link">
+                  Poems
+                </a>
+              </li>
+              <li className="sublist-item">
+                <a href="/essays" className="sublist-link">
+                  Essays
                 </a>
               </li>
             </ul>
@@ -259,12 +269,12 @@ const AppBarComponent: React.FC = () => {
             <div>
             <ul className={`sublist-item-style sublist${expandedItems[3] ? " expanded" : ""}`}>
               <li className="sublist-item">
-                <a href="/genres/some-link" className="sublist-link">
-                  Some Genre
+                <a href="/" className="sublist-link">
+                  Inverbally
                 </a>
               </li>
               <li className="sublist-item">
-                <a href="/genres/some-link" className="sublist-link">
+                <a href="/" className="sublist-link">
                   Other Genre
                 </a>
               </li>
@@ -293,7 +303,22 @@ const AppBarComponent: React.FC = () => {
             <ul className={`sublist-item-style sublist${expandedItems[4] ? " expanded" : ""}`}>
               <li className="sublist-item">
                 <a href="/authors/some-link" className="sublist-link">
-                  FOUNDATION
+                  About Inverbally
+                </a>
+              </li>
+              <li className="sublist-item">
+                <a href="/genres/some-link" className="sublist-link">
+                  Our Vision
+                </a>
+              </li>
+              <li className="sublist-item">
+                <a href="/genres/some-link" className="sublist-link">
+                 Our Mission
+                </a>
+              </li>
+              <li className="sublist-item">
+                <a href="/genres/some-link" className="sublist-link">
+                Donate
                 </a>
               </li>
             </ul>

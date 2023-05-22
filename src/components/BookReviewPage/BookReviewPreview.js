@@ -5,36 +5,36 @@ const BookReviewPreview = ({ article }) => {
     const { title, author, publishedAt, excerpt, slug, imageURL } = article;
     return (
       <li>
-        <div class="o-card o-card_stretch">
+        <div className="o-card o-card_stretch">
         
           <Link href={`/articles/${slug}`}>
             {imageURL && (
               <img
                 className={styles["img-responsive"]}
-                class="img-responsive o-card-media_bookAspect_img"
+                className="img-responsive o-card-media_bookAspect_img"
                 src={imageURL}
                 alt={title}
               />
             )}
           </Link>
-          <div class="o-card-bd o-card-bd_constrained">
-            <div class="c-feature">
-              <div class="c-feature-preamble">
-                <span class="c-txt c-txt_catMeta">Book Review</span>
+          <div className="o-card-bd o-card-bd_constrained">
+            <div className="c-feature">
+              <div className="c-feature-preamble">
+                <span className="c-txt c-txt_catMeta">Book Review</span>
               </div>
   
-              <div class="c-feature-hd">
-                <h2 class="c-hdgSans c-hdgSans_2">
+              <div className="c-feature-hd">
+                <h2 className="c-hdgSans c-hdgSans_2">
                   <Link href={`/articles/${slug}`}>{title}</Link>
                 </h2>
               </div>
   
-              <div class="c-feature-sub c-feature-sub_flat">
-                <span class="c-txt c-txt_attribution">By {author}</span>
+              <div className="c-feature-sub c-feature-sub_flat">
+                <span className="c-txt c-txt_attribution">By {author}</span>
               </div>
   
-              <div class="c-feature-sub">
-                <span class="c-txt c-txt_attribution">Reviewed By {author}</span>
+              <div className="c-feature-sub">
+                <span className="c-txt c-txt_attribution">Reviewed By {author}</span>
               </div>
             </div>
           </div>

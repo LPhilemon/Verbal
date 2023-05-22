@@ -13,7 +13,7 @@ const AppReviewListItem = ({ appreview }) => {
 
 
 <div className={styles["c-tier-label"]}>
-<span class="c-txt c-txt_herald">Inverbally</span>
+<span className="c-txt c-txt_herald">Inverbally</span>
 </div>
 <div className={styles["c-feature"]}>
 <div className={styles["c-feature-media"]}>

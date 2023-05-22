@@ -13,7 +13,7 @@ const InterviewListItem = ({ interview }) => {
 
 
 <div className={styles["c-tier-label"]}>
-<span class="c-txt c-txt_herald">Inverbally</span>
+<span className="c-txt c-txt_herald">Inverbally</span>
 </div>
 <div className={styles["c-feature"]}>
 <div className={styles["c-feature-media"]}>
@@ -25,7 +25,7 @@ const InterviewListItem = ({ interview }) => {
     alt={title}
   />
 )}
-<div class="o-mediaEnclosure">
+<div className="o-mediaEnclosure">
                   {imageURL && (
                     <img
                       className="article-responsive-img"

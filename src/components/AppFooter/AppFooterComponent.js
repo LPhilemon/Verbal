@@ -5,16 +5,16 @@ import Image from "next/image";
 const AppFooter = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer class="appfooter">
+    <footer className="appfooter">
       {/* <footer className={styles.footer}> */}
       {/* Add your footer content here */}
-      <div class="o-site-ft">
-        <div class="o-wrapper">
-          <div class="o-footer">
-            <div class="o-footer-primary u-showAboveSmall">
-              <ul class="o-blocks o-blocks_5up@sm o-blocks_9up@xlg">
+      <div className="o-site-ft">
+        <div className="o-wrapper">
+          <div className="o-footer">
+            <div className="o-footer-primary u-showAboveSmall">
+              <ul className="o-blocks o-blocks_5up@sm o-blocks_9up@xlg">
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/poems">Poems</a>
                       <ul>
@@ -39,7 +39,7 @@ const AppFooter = () => {
                   </ul>
                 </li>
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/poets">Authors</a>
                       <ul>
@@ -53,7 +53,7 @@ const AppFooter = () => {
                   </ul>
                 </li>
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/articles">
                         Articles
@@ -84,7 +84,7 @@ const AppFooter = () => {
                   </ul>
                 </li>
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/video">Jumbled</a>
                       <ul>
@@ -102,7 +102,7 @@ const AppFooter = () => {
                 </li>
 
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/learn">
                         Book Reviews
@@ -129,7 +129,7 @@ const AppFooter = () => {
                 </li>
 
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/--magazine">
                         <i>Inverbally</i> Magazine
@@ -166,7 +166,7 @@ const AppFooter = () => {
                   </ul>
                 </li>
                 <li>
-                  <ul class="c-taxList">
+                  <ul className="c-taxList">
                     <li>
                       <a href="https://www.--foundation.org/foundation/about">
                         About Us
@@ -211,14 +211,14 @@ const AppFooter = () => {
                 </li>
               </ul>
             </div>
-            <div class="o-footer-primary">
-              <div class="o-footer-split">
+            <div className="o-footer-primary">
+              <div className="o-footer-split">
 
 
-                <div class="o-footer-split-primary">
-                  <div class="o-footer-icons">
-                    <ul class="c-socialNav">
-                      <li class="c-socialNav-item">
+                <div className="o-footer-split-primary">
+                  <div className="o-footer-icons">
+                    <ul className="c-socialNav">
+                      <li className="c-socialNav-item">
                         <a
                           href="https://twitter.com/inverbally"
                           target="_blank"
@@ -233,7 +233,7 @@ const AppFooter = () => {
                           </svg>
                         </a>
                       </li>
-                      <li class="c-socialNav-item">
+                      <li className="c-socialNav-item">
                         <a
                           href="https://www.facebook.com/inverbally"
                           target="_blank"
@@ -248,7 +248,7 @@ const AppFooter = () => {
                           </svg>
                         </a>
                       </li>
-                      <li class="c-socialNav-item">
+                      <li className="c-socialNav-item">
                         <a
                           href="https://www.instagram.com/inverbally/"
                           target="_blank"
@@ -264,26 +264,26 @@ const AppFooter = () => {
                         </a>
                       </li>
 
-                      <li class="c-socialNav-item c-mix-socialNav-item_pronounce">
+                      <li className="c-socialNav-item c-mix-socialNav-item_pronounce">
                         <a
                           href="https://twitter.com/inverbally"
                           target="_blank"
                         >
                           {/* <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" width="24" height="24"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> */}
 
-                          <span class="c-txt c-txt_meta c-mix-txt_inherit">
+                          <span className="c-txt c-txt_meta c-mix-txt_inherit">
                             <i>Inverbally</i> Magazine
                           </span>
                         </a>
                       </li>
                     </ul>{" "}
                   </div>
-                  <div class="o-footer-utility">
-                    <ul class="o-hList o-hList_inline@small">
+                  <div className="o-footer-utility">
+                    <ul className="o-hList o-hList_inline@small">
                       <li>
                         <a
                           href="https://www.--foundation.org/contact"
-                          class="c-txt c-txt_austere"
+                          className="c-txt c-txt_austere"
                         >
                           Contact Us
                         </a>
@@ -291,7 +291,7 @@ const AppFooter = () => {
                       <li>
                         <a
                           href="https://www.--foundation.org/newsletter"
-                          class="c-txt c-txt_austere"
+                          className="c-txt c-txt_austere"
                         >
                           Newsletters
                         </a>
@@ -299,7 +299,7 @@ const AppFooter = () => {
                       <li>
                         <a
                           href="https://www.--foundation.org/foundation/press"
-                          class="c-txt c-txt_austere"
+                          className="c-txt c-txt_austere"
                         >
                           Press
                         </a>
@@ -307,7 +307,7 @@ const AppFooter = () => {
                       <li>
                         <a
                           href="https://www.--foundation.org/foundation/privacy"
-                          class="c-txt c-txt_austere"
+                          className="c-txt c-txt_austere"
                         >
                           Privacy Policy
                         </a>
@@ -315,30 +315,30 @@ const AppFooter = () => {
                       <li>
                         <a
                           href="https://www.--foundation.org/foundation/terms-of-service"
-                          class="c-txt c-txt_austere"
+                          className="c-txt c-txt_austere"
                         >
                           Terms of Use
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <div class="o-footer-auxiliary" role="contentinfo">
-                    <ul class="o-hList o-hList_inline@med o-hList_compressed o-hList_compressed_asymmetrical">
+                  <div className="o-footer-auxiliary" role="contentinfo">
+                    <ul className="o-hList o-hList_inline@med o-hList_compressed o-hList_compressed_asymmetrical">
                       <li>
-                        <span class="c-txt c-txt_meta">
+                        <span className="c-txt c-txt_meta">
                           Kampala
-                          <br class="u-hideAboveSmall" /> Uganda
+                          <br className="u-hideAboveSmall" /> Uganda
                         </span>
                       </li>
                       <li>
-                        <small class="c-txt c-txt_meta">
+                        <small className="c-txt c-txt_meta">
                           &copy; {currentYear} Inverbally
                         </small>
                       </li>
                     </ul>{" "}
                   </div>
                 </div>
-                <div class="o-footer-split-primary">
+                <div className="o-footer-split-primary">
                   <a href="https://www.--foundation.org/">
                     <img
                       src="/YellowonBlack.png"

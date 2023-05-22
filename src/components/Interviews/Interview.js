@@ -13,7 +13,7 @@ const Interview = ({ title, author, publishedAt, excerpt, slug, imageURL }) => {
         <p>
           by {author} on {publishedAt}
         </p>
-        <div class="article-responsive-img">
+        <div className="article-responsive-img">
         {imageURL && <img src={imageURL} alt={title} />}
         </div>
        

@@ -7,15 +7,15 @@ const ShortStoryPreview = ({ article }) => {
 
 
         <li>
-                  <div class="c-feature c-mix-feature_shrinkwrap">
-                    <div class="c-feature-preamble">
-                      <span class="c-txt c-txt_catMeta1">ShortStory</span>
+                  <div className="c-feature c-mix-feature_shrinkwrap">
+                    <div className="c-feature-preamble">
+                      <span className="c-txt c-txt_catMeta1">ShortStory</span>
 
                       
                     </div>
 
-                    <div class="c-feature-hd">
-                      <h2 class="c-hdgSerif c-hdgSerif_3">
+                    <div className="c-feature-hd">
+                      <h2 className="c-hdgSerif c-hdgSerif_3">
                       <Link href={`/articles/${slug}`}>{title}</Link>
                       </h2>
                     </div>
@@ -26,8 +26,8 @@ const ShortStoryPreview = ({ article }) => {
   .slice(0, 27)
   .join(" ") }</p>
 </div>
-                    <div class="c-feature-sub">
-                      <span class="c-txt c-txt_attribution">
+                    <div className="c-feature-sub">
+                      <span className="c-txt c-txt_attribution">
                         By {author}
                       </span>
                     </div>

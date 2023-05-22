@@ -15,7 +15,7 @@ const NoImageShortStoryListItem = ({ shortstory }) => {
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet"/>
 
 <div className={styles["c-tier-label"]}>
-<span class="c-txt c-txt_herald"></span>
+<span className="c-txt c-txt_herald"></span>
 </div>
 <div className={styles["c-feature"]}>
 {/* <div className={styles["c-feature-media"]}>

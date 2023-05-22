@@ -39,7 +39,7 @@ const HomeIndexPage = () => {
 			});
 	}, []);
 	if (loading) {
-		return  <Loading />;
+		return  <p>Loading</p>;
 	}
 
 	if (error) {
