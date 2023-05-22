@@ -3,6 +3,7 @@ import styles from "../../styles/ArticleListItem.module.css";
 import BookReviewSamples from "../BookReviewPage/BookReviewSamples";
 import RandomizedSideView from "./RandomizedSideView";
 import LeaderImageHome from "./LeaderImageHome";
+import RecentIssuesList from "../Magazine/RecentIssuesList";
 
 const HomeDisplay = ({ articles }) => {
   // if (!articles || articles.length === 0) {
@@ -191,69 +192,7 @@ const HomeDisplay = ({ articles }) => {
           {/* <!-- end .grid --> */}
         </div>
 
-        <div className="o-vr o-vr_12x">
-          <div className="c-tier c-tier_tabbed c-mix-tier_offsetDistant">
-            <div className="c-tier-tab">
-              <span className="c-txt c-txt_labelMaker">Recent Issues</span>
-            </div>
-            <div className="c-tier-assets">
-              <ul className=" o-blocks o-blocks_compressed o-blocks_expanded@sm o-blocks_2up o-blocks_4up@sm">
-                <li>
-                  <a href="https://www.inverbreplae.org/poetrymagazine/issue/159596/march-2023">
-                    <img
-                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcSet=""
-                      alt=""
-                      className="c-cover-art"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.inverbreplae.org/poetrymagazine/issue/159406/february-2023">
-                    <img
-                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcSet=""
-                      alt="cover of poetry with celestial looking pink pegasuses against a black starry background"
-                      className="c-cover-art"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.inverbreplae.org/poetrymagazine/issue/159207/january-2023">
-                    <img
-                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcSet=""
-                      alt=""
-                      className="c-cover-art"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.inverbreplae.org/poetrymagazine/issue/159018/december-2022">
-                    <img
-                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      sizes="(max-width: 667px) calc((100vw - (15px * 2) - (17px * 2) - 17px) / 2), (max-width: 1170px) calc((100vw - (15px * 2) - (30px * 2) - 90px) / 4), 255px"
-                      srcSet=""
-                      alt=""
-                      className="c-cover-art"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="c-tier-ft">
-              <a
-                href="https://www.inverbreplae.org/poetrymagazine/archive"
-                className="c-btn c-btn_inverted"
-              >
-                Browse More Issues
-              </a>
-            </div>
-          </div>
-        </div>
+    <RecentIssuesList articles={articles} />
 
         <div className="c-tier c-tier_weighted c-tier_weighted_light c-mix-tier_offsetDistant">
           <div className="c-tier-label">
