@@ -6052,10 +6052,10 @@ a.c-pill:hover {
   text-decoration: none;
   font-family: Lato, Gill Sans, Gill Sans MT, Calibri,
     sans-serif;
-  font-size: 17px;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 1.36px;
-  line-height: 19.37px;
+  line-height: 17.37px;
   text-align: center;
   color: black;
 }
@@ -6087,7 +6087,7 @@ a.c-pill:hover {
   text-decoration: none;
   font-family: Lato, Gill Sans, Gill Sans MT, Calibri,
     sans-serif;
-  font-size: 17px;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 1.36px;
   line-height: 19.37px;
