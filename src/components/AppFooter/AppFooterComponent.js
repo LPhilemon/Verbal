@@ -16,21 +16,21 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/poems">Poems</a>
+                      <a href="/poems">Poems</a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/poems/browse">
+                          <a href="/poems">
                             All Poems
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/poems/guides">
+                          <a href="/poems">
                             Poem Guides
                           </a>
                         </li>
 
                         <li>
-                          <a href="https://www.--foundation.org/collections">
+                          <a href="/poems">
                             Collections
                           </a>
                         </li>
@@ -41,10 +41,10 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/poets">Authors</a>
+                      <a href="/">Authors</a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/poets/browse">
+                          <a href="/">
                             All Poets
                           </a>
                         </li>
@@ -55,27 +55,27 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/articles">
+                      <a href="/articles">
                         Articles
                       </a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/articles/category/essays">
+                          <a href="/essays">
                             Essays
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/articles/category/interview">
+                          <a href="interviews">
                             Interviews
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/articles/category/profile">
+                          <a href="/articles/">
                             Profiles
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/articles/browse">
+                          <a href="/articles">
                             All Articles
                           </a>
                         </li>
@@ -86,14 +86,16 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/video">Jumbled</a>
+                      <a href="/essays">Essays</a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/video/browse">
-                            Top Articles
+                          <a href="/essays">
+                            Top Essays
                           </a>
-                          <a href="https://www.--foundation.org/video/browse">
-                            Top Poems
+                          </li>
+                          <li>
+                          <a href="/essays">
+                              Most Contributions
                           </a>
                         </li>
                       </ul>
@@ -104,17 +106,17 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/learn">
+                      <a href="/book-reviews">
                         Book Reviews
                       </a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/learn/children">
+                          <a href="/book-reviews">
                             Children
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/learn/teens">
+                          <a href="/">
                             Teens
                           </a>
                         </li>
@@ -136,28 +138,28 @@ const AppFooter = () => {
                       </a>
                       <ul>
                         <li>
-                          <a href="    https://www.--foundation.org/--magazine/issue/159596/march-2023">
+                          <a href="/">
                             Current Issue
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/--magazine/archive">
+                          <a href="/">
                             <i>Inverbally</i> Other Issues
                           </a>
                         </li>
 
                         <li>
-                          <a href="https://www.--foundation.org/--magazine/about">
+                          <a href="/about">
                             About the Magazine
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/--magazine/submit">
+                          <a href="/submit">
                             How to Submit
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/--magazine/advertise">
+                          <a href="/advertise">
                             Advertise with Us
                           </a>
                         </li>
@@ -168,40 +170,41 @@ const AppFooter = () => {
                 <li>
                   <ul className="c-taxList">
                     <li>
-                      <a href="https://www.--foundation.org/foundation/about">
+                      <a href="/about">
                         About Us
                       </a>
                       <ul>
                         <li>
-                          <a href="https://www.--foundation.org/give">Give</a>
+                          <a href="/give">Give</a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/visit">Visit</a>
+                          <a href="/">Visit</a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/library">
+                          <a href="/">
                             Library
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/harriet-books/browse/category/foundation-news">
+                          <a href=
+                          "/">
                             News
                           </a>
                         </li>
 
                         <li>
-                          <a href="https://www.--foundation.org/foundation/media">
+                          <a href="/">
                             Media Partnerships
                           </a>
                         </li>
 
                         <li>
-                          <a href="https://www.--foundation.org/contact">
+                          <a href="/">
                             Contact Us
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.--foundation.org/foundation/jobs">
+                          <a href="/">
                             Jobs
                           </a>
                         </li>
