@@ -10,7 +10,7 @@ const Home = ({ articles }) => {
     <div>
      
       <HomeDisplay articles={articles} />
-      <ArticleList articles={articles} />
+    
      
     </div>
   );
