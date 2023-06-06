@@ -53,18 +53,7 @@ const HomeIndexPage = () => {
 			<Link href="/articles">
 				View articles
 			</Link>
-			<AddArticle />
-			<AddPoem />
-			<AddBookReview />
-			<AddAppReview />
-			<AddEssay />
-			
-			<AddInterview />
-
-			<br></br>
-			<AddShortStory />
-
-			
+						
 
 		</div>
 	);
