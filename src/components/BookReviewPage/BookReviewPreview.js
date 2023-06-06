@@ -10,7 +10,7 @@ const BookReviewPreview = ({ article }) => {
           <Link href={`/articles/${slug}`}>
             {imageURL && (
               <img
-                className={styles["img-responsive"]}
+               
                 className="img-responsive o-card-media_bookAspect_img"
                 src={imageURL}
                 alt={title}
