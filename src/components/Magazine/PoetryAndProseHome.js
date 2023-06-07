@@ -31,7 +31,8 @@ const PoetryAndProseHome = ({poems}) => {
           <div className="o-grid">
           {poems.length > 0 && <PoetryAndProseHomeImage poem={poems[0]} />}
 
-           {/* <PoetryAndProseHomeImage poem={poems[0]} />  to be replaced with poem[0] */}
+           {/* <PoetryAndProseHomeImage poem={poems[0]} />  */}
+            {/* to be replaced with poem[0] */}
             <div className="o-grid-col o-grid-col_8of12">
               <div className="c-index">
                 <div className="c-index-label">

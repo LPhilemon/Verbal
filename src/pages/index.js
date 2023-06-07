@@ -35,7 +35,7 @@ const HomeIndexPage = () => {
 
 			setLoading(true);
 			const poemsCollection = collection(db, "poems");
-		const poemsQuery = query(poemsCollection, limit(3));
+		const poemsQuery = query(poemsCollection, limit(2));
 		getDocs(poemsQuery)
 			.then((querySnapshot) => {
 				const data = querySnapshot.docs.map((doc) => {

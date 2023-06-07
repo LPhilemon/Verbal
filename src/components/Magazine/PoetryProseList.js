@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PoetryAndProseListItem from "./PoetryProseListItem";
+
 const PoetryProseList = ({poems}) => {
 if (!poems || poems.length === 0) {
     return <div>No issues available.</div>;
@@ -11,7 +12,7 @@ if (!poems || poems.length === 0) {
 
                    {poems.map((poem) => (
         <li  key={poem.id}>
-         {/* <PoetryAndProseListItem poems={poem} /> */}
+         <PoetryAndProseListItem poem={poem} />
         </li>
        
       ))}
