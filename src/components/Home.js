@@ -9,7 +9,7 @@ const Home = ({ articles }) => {
   return (
     <div>
      
-      <HomeDisplay articles={articles} />
+      <HomeDisplay articles={articles} poems={poems}/>
     
      
     </div>

@@ -49,7 +49,7 @@ const HomeIndexPage = () => {
 	return (
 		<div>
 		
-					<Home articles={articleData} />
+			<Home articles={articleData} poems={poems} />
 			<Link href="/articles">
 				View articles
 			</Link>

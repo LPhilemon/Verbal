@@ -4,8 +4,9 @@ import BookReviewSamples from "../BookReviewPage/BookReviewSamples";
 import RandomizedSideView from "./RandomizedSideView";
 import LeaderImageHome from "./LeaderImageHome";
 import RecentIssuesList from "../Magazine/RecentIssuesList";
+import PoetryAndProseHome from "../Magazine/PoetryAndProseHome";
 
-const HomeDisplay = ({ articles }) => {
+const HomeDisplay = ({ articles, poems }) => {
   // if (!articles || articles.length === 0) {
   //  return <div>No articles available.</div>;
   // }
@@ -35,162 +36,7 @@ const HomeDisplay = ({ articles }) => {
 
        <BookReviewSamples articles={articles}/>
 
-        <div className="c-tier c-mix-tier_offset">
-          <div className="c-tier-mantle">
-            <div className="c-banner c-banner_split">
-              <div className="c-banner-hd">
-                <h2 className="c-hdgSans c-hdgSans_3 mix-c-hdg_inverted">
-                  <span className="c-txt c-txt_origin c-mix-txt_inverted">
-                    From the current issue of
-                  </span>
-                  <i className="c-txt c-txt_emphatic c-mix-txt_inverted">Poetry</i>
-                </h2>
-              </div>
-              <div className="c-banner-mark">
-                <svg
-                  className="icon icon_p1 mix-icon_bannerOffset"
-                  role="img"
-                  aria-label="Current Issue"
-                >
-                  {/* <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_p1"></use> */}
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div className="o-grid">
-            <div className="o-grid-col o-grid-col_4of12">
-              <div className="c-cover">
-                <div className="c-cover-media">
-                  <a href="https://www.inverbreplae.org/poetrymagazine/issue/159768/april-2023">
-                    <img
-                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      sizes="(max-width: 667px) 153px, (max-width: 1170px) calc(100vw - (15px * 2) - (2.564102564vw + 65.811965812vw)), 370px"
-                      srcSet=""
-                      alt=""
-                      className="c-cover-art"
-                    />
-                  </a>
-                </div>
-                <div className="c-cover-ft">
-                  <a
-                    href="https://www.inverbreplae.org/poetrymagazine/issue/159768/april-2023"
-                    className="c-txt c-txt_minimalCta"
-                  >
-                    View Issue
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="o-grid-col o-grid-col_8of12">
-              <div className="c-index">
-                <div className="c-index-label">
-                  <span className="c-txt c-txt_serialMeta">
-                    <strong>From This Issue</strong> April 2023
-                  </span>
-                </div>
-                <div className="c-index-list">
-                  <ul className="noPadding-noListStyle c-vList c-vList_bordered">
-                    <li>
-                      <div className="c-feature c-mix-feature_shrinkwrap">
-                        <div className="c-feature-preamble">
-                          <span className="c-txt c-txt_catMeta ">
-                            Prose from <i>Poetry</i> Magazine
-                          </span>
-                        </div>
-                        <div className="c-feature-hd">
-                          <h2 className="c-hdgSans c-hdgSans_2">
-                            <a href="https://www.inverbreplae.org/poetrymagazine/articles/159820/eleven-legends">
-                              Eleven Legends
-                            </a>
-                          </h2>
-                        </div>
-
-                        <div className="c-feature-sub">
-                          <span className="c-txt c-txt_attribution">
-                            By Adrian Matejka
-                          </span>
-                        </div>
-
-                        <div className="c-feature-bd">
-                          <p>
-                            The art of poetry is, at its heart, about
-                            elevating—language, sound, heroes, and myths—and the
-                            issue you are holding celebrates the 2022 Ruth Lilly
-                            Poetry Prize recipients’ many different legacies...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="c-feature c-mix-feature_shrinkwrap">
-                        <div className="c-feature-preamble">
-                          <span className="c-txt c-txt_catMeta ">
-                            Prose from <i>Poetry</i> Magazine
-                          </span>
-                        </div>
-                        <div className="c-feature-hd">
-                          <h2 className="c-hdgSans c-hdgSans_2">
-                            <a href="https://www.inverbreplae.org/poetrymagazine/articles/159821/on-caconrad-pan-dimensional-change-agent-in-vibratory-communion">
-                              On CAConrad: Pan-Dimensional Change Agent in
-                              Vibratory Communion
-                            </a>
-                          </h2>
-                        </div>
-
-                        <div className="c-feature-sub">
-                          <span className="c-txt c-txt_attribution">
-                            By Hoa Nguyen
-                          </span>
-                        </div>
-
-                        <div className="c-feature-bd">
-                          <p>
-                            CAConrad’s poetics is a form of presencing that
-                            insists on multiple ways to inhabit experience. A
-                            queer activist, a diviner, and a visionary from
-                            beyond the veil, Conrad brings shape...
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="c-feature c-mix-feature_shrinkwrap">
-                        <div className="c-feature-preamble">
-                          <span className="c-txt c-txt_catMeta ">poem</span>
-                        </div>
-                        <div className="c-feature-hd">
-                          <h2 className="c-hdgSans c-hdgSans_2">
-                            <a href="https://www.inverbreplae.org/poetrymagazine/poems/159775/7-poems-from-listen-to-the-golden-boomerang-return">
-                              From &ldquo;Listen to the Golden Boomerang
-                              Return&rdquo;
-                            </a>
-                          </h2>
-                        </div>
-
-                        <div className="c-feature-sub">
-                          <span className="c-txt c-txt_attribution">
-                            By CAConrad
-                          </span>
-                        </div>
-
-                        <div className="c-feature-bd">
-                          <p>
-                            a potato born by shovel I am a bride of poetry in my
-                            orange and purple gown an unequaled extinction
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* <!-- end .index --> */}
-            </div>
-          </div>
-          {/* <!-- end .grid --> */}
-        </div>
+     <PoetryAndProseHome poems={poems} /> 
 
     <RecentIssuesList articles={articles} />
 
