@@ -5,12 +5,11 @@ import ArticleList from "./Articles/ArticleList"
 // import "../AppBar/myjscrip1";
 // import "../AppBar/myjscrip2";
 
-const Home = ({ articles }) => {
+const Home = ({ articles, poems }) => {
   return (
     <div>
      
       <HomeDisplay articles={articles} poems={poems}/>
-    
      
     </div>
   );

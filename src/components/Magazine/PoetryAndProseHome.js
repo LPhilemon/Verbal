@@ -1,5 +1,5 @@
 import PoetryAndProseHomeImage from "./PoetryAndProseHomeImage";
-import PoetryAndProseListItem from "./PoetryProseListItem";
+import PoetryProseList from "./PoetryProseList";
 
 
 const PoetryAndProseHome = ({poems}) => {
@@ -29,7 +29,9 @@ const PoetryAndProseHome = ({poems}) => {
             </div>
           </div>
           <div className="o-grid">
-           <PoetryAndProseHomeImage poems={poems} />  {/* to be replaced with poem[0] */}
+          {poems.length > 0 && <PoetryAndProseHomeImage poem={poems[0]} />}
+
+           {/* <PoetryAndProseHomeImage poem={poems[0]} />  to be replaced with poem[0] */}
             <div className="o-grid-col o-grid-col_8of12">
               <div className="c-index">
                 <div className="c-index-label">
@@ -37,13 +39,8 @@ const PoetryAndProseHome = ({poems}) => {
                     <strong>From This Issue</strong> 2023
                   </span>
                 </div>
-                <div className="c-index-list">
-                  <ul className="noPadding-noListStyle c-vList c-vList_bordered">
-                  <PoetryAndProseListItem poems={poems} />
-
-                  
-                  </ul>
-                </div>
+               <PoetryProseList poems={poems} />
+              
               </div>
               {/* <!-- end .index --> */}
             </div>
