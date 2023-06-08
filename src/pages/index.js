@@ -84,9 +84,7 @@ const HomeIndexPage = () => {
 		<div>
 		
 			<Home articles={articleData} poems={poemData} shortstories={shortStoryData} />
-			<Link href="/articles">
-				View articles
-			</Link>
+			
 						
 
 		</div>
