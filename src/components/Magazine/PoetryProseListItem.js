@@ -4,7 +4,7 @@ const PoetryAndProseListItem = ({poem}) => {
 const { title, author, publishedAt, excerpt, slug, imageURL } = poem;
 
     return(
-<li>
+
                       <div className="c-feature c-mix-feature_shrinkwrap">
                         <div className="c-feature-preamble">
                           <span className="c-txt c-txt_catMeta ">
@@ -30,7 +30,7 @@ const { title, author, publishedAt, excerpt, slug, imageURL } = poem;
                           </p>
                         </div>
                       </div>
-                    </li>
+                    
     );
 
 };

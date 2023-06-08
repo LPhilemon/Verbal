@@ -1,4 +1,4 @@
-import ShortStoryList from "../ShortStory/ShortStoryList";
+import ShortStoriesList from "./ShortStoriesList";
 import ShortStoriesHomeImage from "./ShortStoriesHomeImage"
 
 
@@ -16,7 +16,7 @@ const ShortStoriesHome = ({shortstories}) => {
 
           <div className="o-grid o-grid_borderSplit">
          {shortstories.length > 0 &&  <ShortStoriesHomeImage shortstory = {shortstories[0]} /> }
- <ShortStoryList shortstories={shortstories} />
+ <ShortStoriesList shortstories={shortstories} />
            
           </div>
         </div>

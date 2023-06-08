@@ -10,7 +10,7 @@ const HomeIndexPage = () => {
 	const [error, setError] = useState(null);
 	const [articleData, setArticleData] = useState([]);
 	const [poemData, setPoemData] = useState([]);
-	const [ShortStoryData, setShortStoryData] = useState([]);
+	const [shortStoryData, setShortStoryData] = useState([]);
 
 
 	useEffect(() => {
@@ -34,7 +34,7 @@ const HomeIndexPage = () => {
 				setLoading(false);
 			});
 
-			setLoading(true);
+			
 			const poemsCollection = collection(db, "poems");
 		const poemsQuery = query(poemsCollection, limit(2));
 		getDocs(poemsQuery)
@@ -53,10 +53,10 @@ const HomeIndexPage = () => {
 				setLoading(false);
 			});
 
-			setLoading(true);
-			const shortstoriesCollection = collection(db, "shortstories");
-		const shortstoriesQuery = query(shortstoriesCollection, limit(2));
-		getDocs(shortstoriesQuery)
+			
+			const shortStoriesCollection = collection(db, "shortstories");
+		const shortStoriesQuery = query(shortStoriesCollection, limit(2));
+		getDocs(shortStoriesQuery)
 			.then((querySnapshot) => {
 				const data = querySnapshot.docs.map((doc) => {
 					const id = doc.id;
@@ -69,7 +69,7 @@ const HomeIndexPage = () => {
 			})
 			.catch((error) => {
 				setError(error);
-				setLoading(false);
+				setLoading(false);			
 			});
 	}, []);
 	if (loading) {
@@ -83,7 +83,7 @@ const HomeIndexPage = () => {
 	return (
 		<div>
 		
-			<Home articles={articleData} poems={poemData} shortstories={ShortStoryData} />
+			<Home articles={articleData} poems={poemData} shortstories={shortStoryData} />
 			<Link href="/articles">
 				View articles
 			</Link>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const ShortStoriesHomeImage = ({shortstory}) => {
  const { title, author, publishedAt, excerpt, slug, imageURL } = shortstory;
