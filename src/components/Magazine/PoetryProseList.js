@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PoetryAndProseListItem from "./PoetryProseListItem";
 
 const PoetryProseList = ({poems}) => {

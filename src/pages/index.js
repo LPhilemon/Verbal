@@ -10,6 +10,7 @@ const HomeIndexPage = () => {
 	const [error, setError] = useState(null);
 	const [articleData, setArticleData] = useState([]);
 	const [poemData, setPoemData] = useState([]);
+	const [ShortStoryData, setShortStoryData] = useState([]);
 
 
 	useEffect(() => {
@@ -51,6 +52,25 @@ const HomeIndexPage = () => {
 				setError(error);
 				setLoading(false);
 			});
+
+			setLoading(true);
+			const shortstoriesCollection = collection(db, "shortstories");
+		const shortstoriesQuery = query(shortstoriesCollection, limit(2));
+		getDocs(shortstoriesQuery)
+			.then((querySnapshot) => {
+				const data = querySnapshot.docs.map((doc) => {
+					const id = doc.id;
+					const { title, author, publishedAt, excerpt, content, imageURL, slug } =
+						doc.data();
+					return { id, title, author, publishedAt, excerpt, content, imageURL, slug };
+				});
+				setShortStoryData(data);
+				setLoading(false);
+			})
+			.catch((error) => {
+				setError(error);
+				setLoading(false);
+			});
 	}, []);
 	if (loading) {
 		return  <p>Loading</p>;
@@ -63,7 +83,7 @@ const HomeIndexPage = () => {
 	return (
 		<div>
 		
-			<Home articles={articleData} poems={poemData} />
+			<Home articles={articleData} poems={poemData} shortstories={ShortStoryData} />
 			<Link href="/articles">
 				View articles
 			</Link>
