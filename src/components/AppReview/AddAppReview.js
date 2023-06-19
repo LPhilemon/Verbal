@@ -97,6 +97,10 @@ const AddAppReview = () => {
 
 
   return (
+     <div>
+      <h1>
+        Add App Review
+      </h1>
     <form onSubmit={handleSubmit}>
       <label>
         Title:
@@ -173,6 +177,7 @@ const AddAppReview = () => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 

@@ -97,6 +97,10 @@ const AddInterview = () => {
 
 
   return (
+     <div>
+      <h1>
+        Add Interview
+      </h1>
     <form onSubmit={handleSubmit}>
       <label>
         Title:
@@ -173,6 +177,7 @@ const AddInterview = () => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 

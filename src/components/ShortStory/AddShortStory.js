@@ -97,6 +97,10 @@ const AddShortStory = () => {
 
 
   return (
+     <div>
+      <h1>
+        Add ShortStory
+      </h1>
     <form onSubmit={handleSubmit}>
       <label>
         Title:
@@ -173,6 +177,7 @@ const AddShortStory = () => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 

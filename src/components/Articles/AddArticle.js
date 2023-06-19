@@ -97,6 +97,10 @@ const AddArticle = () => {
 
 
   return (
+     <div>
+      <h1>
+        Add Article
+      </h1>
     <form onSubmit={handleSubmit}>
       <label>
         Title:
@@ -173,6 +177,7 @@ const AddArticle = () => {
         Submit
       </button>
     </form>
+    </div>
   );
 };
 
